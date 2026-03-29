@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E '\\\\.\\(md|mjs|config|rules\\)$')",
+      "Read(//c/Users/Ahmed Soliman/.claude/**)",
+      "Edit(/.claude/skills/frontend-design/**)",
+      "Edit(/.claude/skills/section/**)",
+      "Edit(/.claude/skills/seo/**)",
+      "Edit(/.claude/skills/demo-form/**)"
+    ],
+    "additionalDirectories": [
+      "d:\\Projects\\SYAG\\src\\website\\.claude\\skills"
+    ]
+  }
+}
