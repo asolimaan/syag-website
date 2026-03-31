@@ -21,18 +21,18 @@
 ---
 
 **[META]**
-- Title: `SYAG — Security Operations Platform for Residential Compounds`
-- Description: `One platform for guard management, cameras, IoT, assets, visitors, and flow automation. Built for MEA compounds and gated communities. Cloud SaaS. Live in 30 days.`
+- Title: `SYAG — Security Operations Platform for Gated Communities & Managed Facilities`
+- Description: `One platform for guard management, cameras, IoT, assets, visitors, and flow automation. Built for gated communities and managed facilities across MEA. Cloud SaaS. Live in 30 days.`
 
 ---
 
 **[HERO]**
 
 **Headline:**
-# One screen. Every security signal in your compound.
+# One screen. Every security signal in your facility.
 
 **Subheadline:**
-SYAG unifies guard management, cameras, IoT sensors, assets, visitors, and flow automation in a single cloud platform — purpose-built for residential compounds and gated communities in the MEA region.
+SYAG unifies guard management, cameras, IoT sensors, assets, visitors, and flow automation in a single cloud platform — purpose-built for gated communities and managed facilities across the MEA region.
 
 **Primary CTA:** See it live → `/demo`
 **Secondary CTA:** Explore the platform → `/platform`
@@ -44,13 +44,13 @@ No servers. No integrators. Live in 30 days.
 
 **[SECTION: Problem — The Fragmented Stack]**
 
-**Label:** The problem every compound faces
+**Label:** The problem every security team faces
 
 **Headline:**
-## You manage one compound. You're running five tools.
+## You manage one facility. You're running five tools.
 
 **Body:**
-Most compounds today operate with a guard management app, a separate VMS for cameras, a spreadsheet for assets, a paper register for visitors, and WhatsApp for everything else. Nothing connects. When something happens, you're switching between screens hoping you catch it in time.
+Most security teams today operate with a guard management app, a separate VMS for cameras, a spreadsheet for assets, a paper register for visitors, and WhatsApp for everything else. Nothing connects. When something happens, you're switching between screens hoping you catch it in time.
 
 There's a better way.
 
@@ -60,7 +60,7 @@ There's a better way.
 
 **[SECTION: Platform Strip — 5 Pillars]**
 
-**Label:** Everything your compound needs
+**Label:** Everything your facility needs
 
 **Headline:**
 ## Five pillars. One platform.
@@ -71,7 +71,7 @@ There's a better way.
 | **Camera & VMS** | Your cameras don't just record — they act |
 | **IoT Devices** | Every sensor feeds one security picture |
 | **Asset Management** | Everything you own, tracked from day one |
-| **Visitor Management** | Know exactly who enters your compound |
+| **Visitor Management** | Know exactly who enters your facility |
 
 **Supporting line:** Plus: Incident Management, Flow Automation, and a live Operations Center — all included in every plan.
 
@@ -84,7 +84,7 @@ There's a better way.
 **Headline:**
 ## Connect. Automate. See everything.
 
-**Step 1 — Connect your compound**
+**Step 1 — Connect your site**
 Link your cameras, IoT devices, and guard mobile app to SYAG. No hardware changes, no on-site servers. Setup takes days, not months.
 
 **Step 2 — Set your rules**
@@ -100,7 +100,7 @@ Your Operations Center shows every guard, every active incident, every camera ev
 **Label:** Platform highlights
 
 **Headline:**
-## Built for the way compounds actually operate
+## Built for the way security operations actually work
 
 **Card 1 — Guard Management**
 Track every guard in real time. Assign patrols, verify checkpoints, and receive incident reports — all from mobile, over 4G.
@@ -118,15 +118,15 @@ Pre-register visitors with a QR pass sent by WhatsApp. Guards scan at the gate. 
 
 **[SECTION: Social Proof]**
 
-**Label:** Trusted by compound security teams across the MEA region
+**Label:** Trusted by facility security teams across the MEA region
 
-**Stat 1:** {X} compounds secured
+**Stat 1:** {X} facilities secured
 **Stat 2:** {X} incidents resolved
 **Stat 3:** {X} guards active daily
 **Stat 4:** 30 days average onboarding
 
 **Testimonial:**
-> "{Quote from compound manager — specific, outcome-based.}"
+> "{Quote from facility manager — specific, outcome-based.}"
 > — {Name}, Security Director, {Compound Name}, {City}
 
 ---
@@ -171,7 +171,7 @@ All modules included in every plan.
 **[CTA BAND]**
 
 **Headline:**
-## Your compound, live in 30 days.
+## Your facility, live in 30 days.
 
 No servers. No system integrators. No upfront capital.
 
@@ -195,10 +195,10 @@ No servers. No system integrators. No upfront capital.
 **[HERO]**
 
 **Headline:**
-# One cloud platform. Five security pillars. Built for compounds.
+# One cloud platform. Five security pillars. Built for the MEA region.
 
 **Subheadline:**
-SYAG is not a guard app or a camera system. It is a complete physical security operations platform that connects every signal in your compound — guards, cameras, IoT sensors, assets, and visitors — into a single operational picture.
+SYAG is not a guard app or a camera system. It is a complete physical security operations platform that connects every signal in your facility — guards, cameras, IoT sensors, assets, and visitors — into a single operational picture.
 
 **CTA:** Request a demo → `/demo`
 
@@ -207,9 +207,9 @@ SYAG is not a guard app or a camera system. It is a complete physical security o
 **[SECTION: What SYAG Is]**
 
 **Headline:**
-## The platform your compound has been waiting for
+## The platform your facility has been waiting for
 
-SYAG is a cloud-native, multi-tenant Physical Security Information Management (PSIM) platform designed specifically for residential compounds, gated communities, and mid-market facilities in the Middle East and Africa.
+SYAG is a cloud-native, multi-tenant Physical Security Information Management (PSIM) platform designed specifically for gated communities and mid-market managed facilities across the Middle East and Africa.
 
 Unlike enterprise PSIM systems built for airports and banks, SYAG is self-serve, affordable, and deployable in weeks — not months. Unlike guard management tools, SYAG goes far beyond scheduling and GPS tracking.
 
@@ -244,13 +244,13 @@ Plus: **Incident management**, **Flow automation**, and a live **Operations Cent
 **[SECTION: Multi-Tenancy]**
 
 **Headline:**
-## Your compound. Your data. Always isolated.
+## Your facility. Your data. Always isolated.
 
-SYAG uses a schema-per-tenant architecture. Every compound gets its own isolated data environment within the platform. Your data never touches another tenant's records. You get the cost benefits of a shared cloud platform with the data boundaries of a private deployment.
+SYAG uses a schema-per-tenant architecture. Every customer gets their own isolated data environment within the platform. Your data never touches another tenant's records. You get the cost benefits of a shared cloud platform with the data boundaries of a private deployment.
 
 - Your schema, your data, fully isolated
 - Role-based access: admins, supervisors, guards, ops center operators
-- Each site within your compound can have its own configuration
+- Each site within your facility can have its own configuration
 - Data export at any time
 
 ---
@@ -282,13 +282,13 @@ Administrators configure sites, manage user access, review reports, set automati
 | Certified system integrators required | Self-serve setup |
 | On-premises servers | Azure cloud, fully managed |
 | $50K–$1M+ upfront | Monthly subscription |
-| Built for airports and banks | Built for your compound |
+| Built for airports and banks | Built for your facility |
 
 ---
 
 **[CTA]**
 
-**Headline:** Ready to see SYAG in your compound?
+**Headline:** Ready to see SYAG in your facility?
 
 **CTA:** Request a demo → `/demo`
 **Secondary:** Explore all modules → `/modules`
@@ -313,7 +313,7 @@ Administrators configure sites, manage user access, review reports, set automati
 # Built secure. Built to comply.
 
 **Subheadline:**
-SYAG is designed with security at every layer — from how your data is stored to how your users authenticate to how your compound's information is isolated from every other tenant on the platform.
+SYAG is designed with security at every layer — from how your data is stored to how your users authenticate to how your facility's information is isolated from every other tenant on the platform.
 
 ---
 
@@ -339,11 +339,11 @@ SYAG runs on Microsoft Azure infrastructure, providing enterprise-grade reliabil
 ## Your data stays yours — always
 
 **Schema-per-tenant architecture**
-Every compound on SYAG gets its own isolated PostgreSQL schema. This means your guard records, incident logs, visitor data, and asset registry are stored in a completely separate namespace from every other customer. No shared tables. No cross-tenant data access. No risk of data leakage between compounds.
+Every customer on SYAG gets their own isolated data schema. This means your guard records, incident logs, visitor data, and asset registry are stored in a completely separate namespace from every other customer. No shared tables. No cross-tenant data access. No risk of data leakage between tenants.
 
 **What this means in practice:**
-- Your compound admin cannot see another compound's data
-- Even if two compounds are in the same city, their data never intersects
+- Your facility admin cannot see another tenant's data
+- Even if two customers are in the same city, their data never intersects
 - You can request a full export of your data at any time
 
 ---
@@ -364,7 +364,7 @@ SYAG uses OpenIddict as its identity provider, implementing industry-standard OA
 **Role hierarchy:**
 - **Guard** — field operations only (patrol, incidents, visitor scan)
 - **Supervisor** — site-level management + guard oversight
-- **Admin** — full compound configuration + user management
+- **Admin** — full account configuration + user management
 - **Ops Center** — cross-site read access for monitoring
 
 Every action is logged with user identity, timestamp, and IP address. Full audit trail, always.
@@ -428,7 +428,7 @@ Have compliance requirements? Talk to our team. We'll walk you through the archi
 # Connect what you already have.
 
 **Subheadline:**
-SYAG is designed to work with the cameras, sensors, and devices already installed in your compound. No ripping and replacing. Connect your existing infrastructure and start seeing everything in one place.
+SYAG is designed to work with the cameras, sensors, and devices already installed in your facility. No ripping and replacing. Connect your existing infrastructure and start seeing everything in one place.
 
 ---
 
@@ -445,7 +445,7 @@ SYAG supports ONVIF-compliant IP cameras from all major manufacturers. If your c
 
 **Supported camera brands:** {List brands as integrations are confirmed}
 
-**What camera integration means for your compound:**
+**What camera integration means for your facility:**
 - Camera events automatically create incidents
 - Camera events can trigger Flow automation rules
 - Live feeds accessible from the Operations Center
@@ -471,7 +471,7 @@ SYAG connects to IoT devices via Azure IoT Hub (S1 Standard). SYAG maintains a s
 | Perimeter sensors | Fence vibration, beam break |
 | Vehicle presence sensors | Gate loop detection |
 
-**Adding a new device type:** Compound admins can request new device types. SYAG's catalog is updated centrally — your team simply selects the type and registers the device instance.
+**Adding a new device type:** Facility admins can request new device types. SYAG's catalog is updated centrally — your team simply selects the type and registers the device instance.
 
 ---
 
@@ -530,7 +530,7 @@ Don't see your camera or device listed? Talk to us.
 **[HERO]**
 
 **Headline:**
-# Your compound fits in your pocket.
+# Your facility fits in your pocket.
 
 **Subheadline:**
 Security operations don't happen at a desk. SYAG's mobile apps give guards and supervisors everything they need in the field — patrol tracking, incident reporting, visitor scanning, and live dispatch — all over a standard 4G connection.
@@ -542,7 +542,7 @@ Security operations don't happen at a desk. SYAG's mobile apps give guards and s
 **Headline:**
 ## The Guard App — Built for the field
 
-Guards in your compound download the SYAG Guard App and operate their entire shift from their phone. No paper forms. No radio check-ins that go unlogged.
+Guards in your facility download the SYAG Guard App and operate their entire shift from their phone. No paper forms. No radio check-ins that go unlogged.
 
 **What guards do on the app:**
 - Clock in and out with GPS-verified location
@@ -585,7 +585,7 @@ Supervisors see a live picture of their site without being chained to a control 
 **Headline:**
 ## The Admin Dashboard — Full control from the browser
 
-Compound administrators access SYAG via the web dashboard — no software installation required. Any modern browser on any device.
+Facility administrators access SYAG via the web dashboard — no software installation required. Any modern browser on any device.
 
 **Admin capabilities:**
 - Configure sites, zones, and patrol routes
@@ -620,10 +620,10 @@ Compound administrators access SYAG via the web dashboard — no software instal
 **[HERO]**
 
 **Headline:**
-# Every module your compound needs. All in one platform.
+# Every module your security operation needs. All in one platform.
 
 **Subheadline:**
-SYAG's modules work independently or together. Start with the capability that matters most to your compound today — and activate more as your operations grow. All modules are included in every plan. No per-module fees.
+SYAG's modules work independently or together. Start with the capability that matters most to your operation today — and activate more as your operations grow. All modules are included in every plan. No per-module fees.
 
 ---
 
@@ -650,7 +650,7 @@ Track everything you own, from purchase to retirement.
 `/modules/assets`
 
 **Module 6 — Visitor Management**
-Know exactly who enters your compound — and when they leave.
+Know exactly who enters your facility — and when they leave.
 `/modules/visitors`
 
 **Module 7 — Flow Automation**
@@ -693,7 +693,7 @@ The result: a complete operational picture, not a collection of disconnected too
 
 **[META]**
 - Title: `Guard Management — Real-Time Guard Tracking & Scheduling | SYAG`
-- Description: `Track every guard in real time. Manage shift scheduling, patrol assignments, checkpoint verification, and incident reporting from one screen. Built for MEA compounds.`
+- Description: `Track every guard in real time. Manage shift scheduling, patrol assignments, checkpoint verification, and incident reporting from one screen. Built for MEA gated communities and facilities.`
 
 ---
 
@@ -703,7 +703,7 @@ The result: a complete operational picture, not a collection of disconnected too
 # Know where every guard is. Every second.
 
 **Subheadline:**
-SYAG Guard Management gives compound supervisors and administrators complete real-time visibility into their security team — without radio calls, paper registers, or manual check-ins.
+SYAG Guard Management gives facility supervisors and administrators complete real-time visibility into their security team — without radio calls, paper registers, or manual check-ins.
 
 **CTA:** See it in action → `/demo`
 
@@ -714,9 +714,9 @@ SYAG Guard Management gives compound supervisors and administrators complete rea
 **Headline:**
 ## Real-time guard map
 
-See every active guard's position on a live compound map. Updated continuously via the guard's mobile app over 4G. No specialist hardware. No GPS trackers to purchase separately.
+See every active guard's position on a live facility map. Updated continuously via the guard's mobile app over 4G. No specialist hardware. No GPS trackers to purchase separately.
 
-- Live positions on compound floor plan or satellite map
+- Live positions on site map or satellite map
 - Guard status indicators: On duty, On patrol, Idle, On break, Off duty
 - Last seen timestamp for each guard
 - Alert when a guard hasn't moved in {X} minutes (configurable)
@@ -744,7 +744,7 @@ Create, publish, and update guard schedules from the web dashboard. Guards see t
 **Headline:**
 ## The digital shift register
 
-SYAG replaces paper logbooks with a structured digital register. Every shift starts and ends with a handover record. All field definitions are customisable per compound.
+SYAG replaces paper logbooks with a structured digital register. Every shift starts and ends with a handover record. All field definitions are customisable per site.
 
 - Configurable field templates — define what gets recorded at shift start, during the shift, and at shift end
 - Guards fill in the register from the mobile app
@@ -767,7 +767,7 @@ Supervisors and admins see aggregated performance metrics across their security 
 - On-time arrival percentage
 - Overtime hours by guard
 
-Use this data to identify high performers and address gaps before they affect compound safety.
+Use this data to identify high performers and address gaps before they affect site safety.
 
 ---
 
@@ -783,7 +783,7 @@ Use this data to identify high performers and address gaps before they affect co
 
 **[CTA]**
 
-**Headline:** See SYAG Guard Management live in your compound.
+**Headline:** See SYAG Guard Management live in your facility.
 
 **CTA:** Request a demo → `/demo`
 
@@ -817,7 +817,7 @@ SYAG Patrol ensures guards complete their assigned routes — and proves it. NFC
 ## Three ways to verify presence
 
 **NFC Tags**
-Place NFC tags at checkpoints around your compound. Guards tap their phone to scan. Tamper-proof, instant, and works without internet at the moment of scan (syncs when connected).
+Place NFC tags at checkpoints around your facility. Guards tap their phone to scan. Tamper-proof, instant, and works without internet at the moment of scan (syncs when connected).
 
 **QR Codes**
 Attach QR code stickers at checkpoints. Guards scan with the SYAG app camera. Lower cost than NFC, easy to install anywhere.
@@ -866,7 +866,7 @@ At the end of every shift, SYAG generates a full patrol report automatically:
 
 - All checkpoints visited, time-stamped
 - Missed checkpoints with reason (if logged by guard)
-- GPS track overlay on compound map
+- GPS track overlay on facility map
 - Comparison to scheduled route
 - Guard compliance rate for the shift
 
@@ -898,7 +898,7 @@ Reports are available in the dashboard, exportable as PDF, and can be scheduled 
 # Your cameras don't just record. They act.
 
 **Subheadline:**
-Every other compound security tool treats cameras as passive recorders. SYAG treats them as active sensors — camera events feed directly into your incident pipeline and can trigger automated responses the moment something happens.
+Every other facility security tool treats cameras as passive recorders. SYAG treats them as active sensors — camera events feed directly into your incident pipeline and can trigger automated responses the moment something happens.
 
 **CTA:** See it live → `/demo`
 
@@ -1007,14 +1007,14 @@ SYAG monitors the health of every connected camera continuously. If a camera goe
 # Every sensor. One security picture.
 
 **Subheadline:**
-The panic button pressed in the lobby. The UPS that just lost power. The perimeter sensor that triggered at 3am. SYAG connects every IoT device in your compound to the same operational picture — so nothing is missed.
+The panic button pressed in the lobby. The UPS that just lost power. The perimeter sensor that triggered at 3am. SYAG connects every IoT device in your facility to the same operational picture — so nothing is missed.
 
 ---
 
 **[SECTION: Use Cases First]**
 
 **Headline:**
-## What IoT integration looks like in your compound
+## What IoT integration looks like in your facility
 
 **Panic button pressed**
 A guard presses their panic button. Within 3 seconds, an incident is created in SYAG, the on-duty supervisor receives a push notification, and the two nearest guards are notified to respond. No radio call required.
@@ -1035,7 +1035,7 @@ A smoke sensor in the basement car park triggers. SYAG creates an emergency inci
 **Headline:**
 ## Connect your devices in minutes
 
-SYAG uses a system-managed device type catalog. Compound admins register device instances by selecting from a catalog of known types — no custom event schema configuration required.
+SYAG uses a system-managed device type catalog. Facility admins register device instances by selecting from a catalog of known types — no custom event schema configuration required.
 
 **Available device categories:**
 
@@ -1090,7 +1090,7 @@ SYAG monitors the connectivity status of every registered device continuously.
 
 **[META]**
 - Title: `Asset Management — Track Every Physical Asset in Your Compound | SYAG`
-- Description: `Register, track, and manage every physical asset in your compound. Cameras, guard equipment, vehicles, generators — with full lifecycle history and maintenance alerts.`
+- Description: `Register, track, and manage every physical asset in your facility. Cameras, guard equipment, vehicles, generators — with full lifecycle history and maintenance alerts.`
 
 ---
 
@@ -1100,16 +1100,16 @@ SYAG monitors the connectivity status of every registered device continuously.
 # Everything you own. Tracked from day one.
 
 **Subheadline:**
-Spreadsheets and shared drives are not an asset management system. SYAG gives compound administrators a structured registry for every physical security asset — with lifecycle tracking, assignment history, and maintenance alerts built in.
+Spreadsheets and shared drives are not an asset management system. SYAG gives facility administrators a structured registry for every physical security asset — with lifecycle tracking, assignment history, and maintenance alerts built in.
 
 ---
 
 **[SECTION: Asset Registry]**
 
 **Headline:**
-## One register for everything in your compound
+## One register for everything in your facility
 
-Every physical asset in your compound has a record in SYAG: serial number, purchase date, warranty status, assigned location, current custodian, and full event history.
+Every physical asset in your facility has a record in SYAG: serial number, purchase date, warranty status, assigned location, current custodian, and full event history.
 
 **Asset types you can track:**
 - Security cameras and recording equipment
@@ -1119,7 +1119,7 @@ Every physical asset in your compound has a record in SYAG: serial number, purch
 - Facility infrastructure (generators, UPS systems, transformers)
 - IT equipment (servers, networking hardware, intercoms)
 
-**Custom asset types:** Define your own asset categories with custom attributes. A vehicle has different fields from a fire extinguisher — SYAG adapts to your compound's asset vocabulary.
+**Custom asset types:** Define your own asset categories with custom attributes. A vehicle has different fields from a fire extinguisher — SYAG adapts to your facility's asset vocabulary.
 
 ---
 
@@ -1187,10 +1187,10 @@ Assign assets to guards, sites, or zones. Track check-out and check-in. Know imm
 **[HERO]**
 
 **Headline:**
-# Know exactly who enters your compound — and when they leave.
+# Know exactly who enters your facility — and when they leave.
 
 **Subheadline:**
-Every visitor, every contractor, every delivery — logged, verified, and traceable. SYAG Visitor Management replaces the paper visitor book with a digital system that works the way your compound already operates.
+Every visitor, every contractor, every delivery — logged, verified, and traceable. SYAG Visitor Management replaces the paper visitor book with a digital system that works the way your facility already operates.
 
 ---
 
@@ -1250,7 +1250,7 @@ If a visitor's approved window expires and they haven't checked out, SYAG flags 
 **Headline:**
 ## Flagged individuals. Instant alerts.
 
-Maintain a compound blacklist for individuals who are not permitted entry — banned contractors, former residents, or individuals flagged by authorities.
+Maintain a site blacklist for individuals who are not permitted entry — banned contractors, former residents, or individuals flagged by authorities.
 
 - Add individuals to the blacklist with reason and supporting documentation
 - When a pre-registration is submitted for a blacklisted individual, the approving admin is alerted before entry is granted
@@ -1267,7 +1267,7 @@ Maintain a compound blacklist for individuals who are not permitted entry — ba
 Pre-approve contractors with time-limited access passes that expire automatically.
 
 - Define the approved work period (dates and times)
-- Specify approved access zones within the compound
+- Specify approved access zones within the facility
 - Generate QR passes for all contractor personnel on the job
 - Passes auto-expire at the end of the approved period
 - Contractor visit history maintained for compliance and insurance purposes
@@ -1288,7 +1288,7 @@ Pre-approve contractors with time-limited access passes that expire automaticall
 
 **[META]**
 - Title: `Flow Automation — Visual Security Logic Builder | SYAG`
-- Description: `Build your compound's security automation visually. Connect camera events, IoT signals, visitor actions, and guard status to automated responses. No developer required.`
+- Description: `Build your facility's security automation visually. Connect camera events, IoT signals, visitor actions, and guard status to automated responses. No developer required.`
 
 ---
 
@@ -1298,7 +1298,7 @@ Pre-approve contractors with time-limited access passes that expire automaticall
 # Build your security logic. No developer required.
 
 **Subheadline:**
-Flow is SYAG's visual automation engine. Connect any event from any module — cameras, IoT, guards, visitors — to any action. Create automated responses that keep your compound safe without manual intervention.
+Flow is SYAG's visual automation engine. Connect any event from any module — cameras, IoT, guards, visitors — to any action. Create automated responses that keep your facility safe without manual intervention.
 
 **CTA:** See a live demo → `/demo`
 
@@ -1381,7 +1381,7 @@ This rule runs automatically, 24/7, without any manual monitoring.
 **Headline:**
 ## Start with a template. Customise from there.
 
-SYAG provides pre-built Flow templates for the most common compound security scenarios. Activate a template with one click, then adjust it to match your specific setup.
+SYAG provides pre-built Flow templates for the most common facility security scenarios. Activate a template with one click, then adjust it to match your specific setup.
 
 **Available templates:**
 - After-hours motion detection response
@@ -1406,7 +1406,7 @@ SYAG provides pre-built Flow templates for the most common compound security sce
 
 **[CTA]**
 
-**Headline:** See what your compound looks like when security is automated.
+**Headline:** See what your facility looks like when security is automated.
 
 **CTA:** Request a demo → `/demo`
 
@@ -1430,7 +1430,7 @@ SYAG provides pre-built Flow templates for the most common compound security sce
 # From alert to resolution. Nothing falls through the cracks.
 
 **Subheadline:**
-SYAG Incident Management is the operational backbone of your compound security. Every incident — from a motion detection alarm to a medical emergency — follows a structured lifecycle with full evidence capture, escalation rules, and audit trail.
+SYAG Incident Management is the operational backbone of your facility security. Every incident — from a motion detection alarm to a medical emergency — follows a structured lifecycle with full evidence capture, escalation rules, and audit trail.
 
 ---
 
@@ -1480,7 +1480,7 @@ Guards attach evidence directly from the mobile app at the time of response:
 - **Photos** — taken in-app with automatic timestamp and GPS metadata
 - **Audio recordings** — voice notes attached to the incident
 - **Video clips** — short video from the scene
-- **GPS coordinates** — exact location of the incident on compound map
+- **GPS coordinates** — exact location of the incident on facility map
 - **Linked camera footage** — clip from the camera that triggered the incident
 - **Guard notes** — structured text description of what was found
 
@@ -1499,7 +1499,7 @@ Configure escalation rules per incident type and priority:
 - If an incident is unresolved after {Y} minutes → escalate to admin
 - If a critical incident has no response after {Z} minutes → escalate and page all available supervisors
 
-Escalation rules are configurable per compound and per incident type.
+Escalation rules are configurable per site and per incident type.
 
 ---
 
@@ -1512,7 +1512,7 @@ The Incident Analytics dashboard shows:
 
 - Incident volume by type, time period, and severity
 - Average response time and resolution time
-- Incidents by location (heat map on compound map)
+- Incidents by location (heat map on facility map)
 - Repeat incident hotspots — flag areas with recurring issues
 - Guard response performance — who responds fastest, who resolves thoroughly
 - Monthly incident trend — are incidents increasing or decreasing?
@@ -1535,26 +1535,23 @@ Export any report as PDF or CSV for insurance, compliance, or management reporti
 
 **[META]**
 - Title: `SYAG Solutions — Security Operations for Compounds, Communities & Facilities`
-- Description: `SYAG is purpose-built for residential compounds, gated communities, mixed-use developments, industrial facilities, healthcare campuses, and educational institutions.`
+- Description: `SYAG is purpose-built for gated communities, managed facilities, mixed-use developments, industrial facilities, healthcare campuses, and educational institutions.`
 
 ---
 
 **[HERO]**
 
 **Headline:**
-# Built for your kind of compound.
+# Built for your operation.
 
 **Subheadline:**
-SYAG is not a generic security platform. It's designed around the specific operational realities of the facilities it serves. Find your compound type below.
+SYAG is not a generic security platform. It's designed around the specific operational realities of the facilities it serves. Find your facility type below.
 
 ---
 
 **[SECTION: Solution Cards]**
 
-**Residential Compounds** — The primary SYAG use case. Guard management, visitor passes, camera events, and IoT sensors — unified for the compound manager who runs a community, not a corporation.
-→ `/solutions/residential-compounds`
-
-**Gated Communities** — HOA-style management with resident-facing visitor pre-registration, gate access logging, and community-wide incident awareness.
+**Gated Communities & Residential Compounds** — Guard management, visitor QR passes, camera events, and IoT sensors — unified for the security manager who runs a community, not a corporation. Full Arabic + English support.
 → `/solutions/gated-communities`
 
 **Mixed-Use Developments** — Office towers, retail floors, and residential units in the same perimeter. SYAG handles multi-zone operations with role-based access per tenant.
@@ -1585,7 +1582,7 @@ SYAG is not a generic security platform. It's designed around the specific opera
 
 **[META]**
 - Title: `Security Operations for Residential Compounds | SYAG`
-- Description: `SYAG is purpose-built for residential compound security. Replace your guard app, VMS, visitor register, and asset spreadsheet with one cloud platform. MEA-native.`
+- Description: `SYAG is purpose-built for residential compound and gated community security. Replace your guard app, VMS, visitor register, and asset spreadsheet with one cloud platform. MEA-native.`
 
 ---
 
@@ -1595,7 +1592,7 @@ SYAG is not a generic security platform. It's designed around the specific opera
 # Security operations for the places people call home.
 
 **Subheadline:**
-You manage guards, cameras, visitors, and equipment across a community of hundreds of families. SYAG gives you one unified platform for all of it — built specifically for the way residential compounds in the Gulf and MEA region operate.
+You manage guards, cameras, visitors, and equipment across a community of hundreds of families. SYAG gives you one unified platform for all of it — built specifically for the way gated communities in the Gulf and MEA region operate.
 
 **CTA:** Request a demo → `/demo`
 
@@ -1604,9 +1601,9 @@ You manage guards, cameras, visitors, and equipment across a community of hundre
 **[SECTION: The Problem]**
 
 **Headline:**
-## How compound security actually works today
+## How residential compound security actually works today
 
-Most residential compound security managers operate with a combination of:
+Most gated community security managers operate with a combination of:
 
 - A guard management app (or no app — just phone calls)
 - A separate VMS or NVR for cameras
@@ -1626,7 +1623,7 @@ This is the problem SYAG was built to solve.
 ## One platform. Everything connected.
 
 **Guard management**
-Your guards operate from the SYAG mobile app. You see every guard's live position on a map of your compound. Patrols are verified by checkpoint scans. Incidents are filed from the field with photos and GPS.
+Your guards operate from the SYAG mobile app. You see every guard's live position on a map of your facility. Patrols are verified by checkpoint scans. Incidents are filed from the field with photos and GPS.
 
 **Camera events that act**
 When your camera detects motion in the car park at 3am, SYAG doesn't just record it — it creates an incident, notifies your supervisor, and dispatches the nearest guard. Automatically.
@@ -1644,20 +1641,20 @@ Your cameras, vehicles, guard equipment, and generators are all registered in SY
 **Headline:**
 ## Built for how you actually operate
 
-SYAG is designed specifically for the residential compound and gated community context in the MEA and GCC region:
+SYAG is designed specifically for the gated community context in the MEA and GCC region:
 
 - **Arabic + English** — platform and mobile apps available in both languages, RTL supported
 - **4G mobile-first** — guards work over standard cellular data, no Wi-Fi infrastructure required
 - **Works on affordable devices** — no expensive hardware required for guards
-- **MEA-calibrated pricing** — built for compound security budgets, not enterprise IT budgets
+- **MEA-calibrated pricing** — built for gated community security budgets, not enterprise IT budgets
 - **Compliance-ready** — architecture supports Saudi NCA and UAE IA requirements
 
 ---
 
-**[SECTION: What Compound Managers Say]**
+**[SECTION: What Gated Community Managers Say]**
 
 **Testimonial:**
-> "{Quote from compound security manager — specific outcome, before/after contrast.}"
+> "{Quote from gated community security manager — specific outcome, before/after contrast.}"
 > — {Name}, {Title}, {Compound name}, {City}
 
 ---
@@ -1680,9 +1677,9 @@ SYAG is designed specifically for the residential compound and gated community c
 
 **[CTA]**
 
-**Headline:** Ready to run your compound from one screen?
+**Headline:** Ready to run your facility from one screen?
 
-**CTA:** Request a demo — we'll show you your compound specifically → `/demo`
+**CTA:** Request a demo — we'll show you your facility specifically → `/demo`
 
 ---
 ---
@@ -1764,7 +1761,7 @@ Office tenants pre-register their own visitors. Residents pre-register personal 
 An incident that starts in the retail area may involve a visitor who has access to the residential car park. SYAG links incidents across zones and gives the security operations team a complete picture regardless of where the incident started.
 
 **Unified Guard Management**
-Guards assigned to different zones are all visible in the same live map. Supervisors can dispatch across zones and maintain compound-wide patrol coverage from a single screen.
+Guards assigned to different zones are all visible in the same live map. Supervisors can dispatch across zones and maintain site-wide patrol coverage from a single screen.
 
 ---
 
@@ -1914,14 +1911,14 @@ Every incident on a school campus must be documented for safeguarding, insurance
 
 **[META]**
 - Title: `Why SYAG — The Only Compound PSIM Platform Built for MEA`
-- Description: `SYAG covers all five security pillars, deploys in 30 days, requires no servers or integrators, and is priced for MEA compounds — not Western enterprise budgets.`
+- Description: `SYAG covers all five security pillars, deploys in 30 days, requires no servers or integrators, and is priced for MEA gated communities and facilities — not Western enterprise budgets.`
 
 ---
 
 **[HERO]**
 
 **Headline:**
-# The only PSIM built for compounds, not corporations.
+# The only PSIM built for gated communities and facilities, not corporations.
 
 **Subheadline:**
 There are many security software tools. None of them do what SYAG does — all five capability pillars, cloud SaaS, MEA-native, deployable in 30 days.
@@ -1934,7 +1931,7 @@ There are many security software tools. None of them do what SYAG does — all f
 
 Guard management software covers guards. Video management systems cover cameras. Enterprise PSIM covers everything — but only for airports and government buildings.
 
-SYAG is the first platform to combine guard management, camera events, IoT device management, asset tracking, and visitor management in a single multi-tenant SaaS product accessible to mid-market compounds.
+SYAG is the first platform to combine guard management, camera events, IoT device management, asset tracking, and visitor management in a single multi-tenant SaaS product accessible to mid-market facilities.
 
 → See the full capability comparison
 
@@ -1944,9 +1941,9 @@ Every enterprise PSIM platform in existence requires on-premises infrastructure,
 
 → See SYAG vs. Enterprise PSIM
 
-**Reason 3 — We're built for MEA compounds, not Western enterprise.**
+**Reason 3 — We're built for MEA gated communities and facilities, not Western enterprise.**
 
-Most security software is built for North American or European buyers. SYAG is designed from the ground up for residential compounds, gated communities, and mid-market facilities in the Gulf and broader MEA region — with Arabic language support, 4G-first mobile architecture, MEA-calibrated pricing, and a compliance path for Saudi NCA and UAE IA requirements.
+Most security software is built for North American or European buyers. SYAG is designed from the ground up for gated communities and mid-market facilities across the Gulf and broader MEA region — with Arabic language support, 4G-first mobile architecture, MEA-calibrated pricing, and a compliance path for Saudi NCA and UAE IA requirements.
 
 ---
 
@@ -1973,17 +1970,17 @@ Most security software is built for North American or European buyers. SYAG is d
 
 **[META]**
 - Title: `SYAG vs. Guard Management Software — What Guard Software Misses`
-- Description: `Guard software tracks your guards. SYAG runs your entire compound. See why TrackTik, Silvertrac, and Belfry leave 80% of your security operations unaddressed.`
+- Description: `Guard software tracks your guards. SYAG runs your entire security operation. See why TrackTik, Silvertrac, and Belfry leave 80% of your security operations unaddressed.`
 
 ---
 
 **[HERO]**
 
 **Headline:**
-# Guard software manages your guards. SYAG manages your compound.
+# Guard software manages your guards. SYAG manages your facility.
 
 **Subheadline:**
-Guard management tools are good at what they do: scheduling, GPS tracking, patrol verification, and incident reporting. But they were built for security contracting companies — not for compound operators. And they cover less than 20% of your compound's security signals.
+Guard management tools are good at what they do: scheduling, GPS tracking, patrol verification, and incident reporting. But they were built for security contracting companies — not for facility operators. And they cover less than 20% of your facility's security signals.
 
 ---
 
@@ -2047,7 +2044,7 @@ Add these up and compare to SYAG's single subscription. The economics change qui
 
 TrackTik, Silvertrac, and Belfry are excellent tools for security contracting companies that need to manage large guard workforces across multiple client sites, handle scheduling and payroll, and prove service delivery to clients.
 
-If you are a compound manager — not a security company — your needs are different. You don't need billing, payroll, or client portals. You need a unified operational picture of your compound.
+If you are a facility manager — not a security company — your needs are different. You don't need billing, payroll, or client portals. You need a unified operational picture of your facility.
 
 That's what SYAG is.
 
@@ -2074,17 +2071,17 @@ That's what SYAG is.
 **[HERO]**
 
 **Headline:**
-# Enterprise PSIM wasn't built for your compound. It was built for Heathrow.
+# Enterprise PSIM wasn't built for your facility. It was built for Heathrow.
 
 **Subheadline:**
-Genetec, Milestone, Advancis, and Honeywell are powerful platforms. They cover cameras, IoT, and building systems with serious depth. But they are designed for airports, banks, government facilities, and Fortune 500 campuses. For a residential compound or mid-market facility, they bring complexity and cost that is completely out of proportion.
+Genetec, Milestone, Advancis, and Honeywell are powerful platforms. They cover cameras, IoT, and building systems with serious depth. But they are designed for airports, banks, government facilities, and Fortune 500 campuses. For a gated community or mid-market facility, they bring complexity and cost that is completely out of proportion.
 
 ---
 
 **[SECTION: The Enterprise PSIM Problem]**
 
 **Headline:**
-## Three reasons enterprise PSIM doesn't work for your compound
+## Three reasons enterprise PSIM doesn't work for your facility
 
 **1. The cost is prohibitive**
 Enterprise PSIM deployments start at $50,000 and regularly exceed $1,000,000 when hardware, integration, licensing, and implementation are included. Annual maintenance fees add 15–25% of the initial cost every year.
@@ -2093,14 +2090,14 @@ Enterprise PSIM deployments start at $50,000 and regularly exceed $1,000,000 whe
 Enterprise PSIM platforms require certified system integrators — specialists who configure the platform, install the hardware, write the integration scripts, and maintain the system. This is a multi-month project. If something changes in your setup, you call the integrator.
 
 **3. It wasn't designed for your use case**
-Enterprise PSIM is built for complex multi-building facilities with hundreds of cameras and strict regulatory requirements. Residential compounds, gated communities, and mid-market facilities don't need a $500K airport security system. They need a platform built for their scale and context.
+Enterprise PSIM is built for complex multi-building facilities with hundreds of cameras and strict regulatory requirements. Gated communities, gated communities, and mid-market facilities don't need a $500K airport security system. They need a platform built for their scale and context.
 
 ---
 
 **[SECTION: Capability Comparison]**
 
 **Headline:**
-## What enterprise PSIM covers — and where it falls short for compounds
+## What enterprise PSIM covers — and where it falls short for gated communities and facilities
 
 | Capability | Genetec | Milestone | Advancis | **SYAG** |
 |---|---|---|---|---|
@@ -2129,13 +2126,13 @@ SYAG provides the same five capability pillars as enterprise PSIM — camera int
 - Requires no certified system integrator
 - Deploys in 30 days, not 6 months
 - Starts at {price}/month, not $50,000
-- Is accessible to compound managers, not just enterprise IT departments
+- Is accessible to facility managers, not just enterprise IT departments
 
 ---
 
 **[CTA]**
 
-**Headline:** See what enterprise-grade security operations look like at compound-friendly pricing.
+**Headline:** See what enterprise-grade security operations look like at MEA-calibrated pricing.
 
 **CTA:** Request a demo → `/demo`
 
@@ -2160,7 +2157,7 @@ SYAG provides the same five capability pillars as enterprise PSIM — camera int
 **[HERO]**
 
 **Headline:**
-# Your compound's data. Protected at every layer.
+# Your facility's data. Protected at every layer.
 
 **Subheadline:**
 When you run security operations on SYAG, you're trusting us with sensitive information — guard locations, incident records, visitor identities. We take that responsibility seriously.
@@ -2172,7 +2169,7 @@ When you run security operations on SYAG, you're trusting us with sensitive info
 **Headline:**
 ## Your data is yours. Always isolated.
 
-Every compound on SYAG operates in its own isolated data environment. This is not a configuration option — it is how the platform is built. Your incident logs, visitor records, and guard data are stored in a completely separate database schema from every other customer. No data is ever shared or accessible across tenants.
+Every customer on SYAG operates in their own isolated data environment. This is not a configuration option — it is how the platform is built. Your incident logs, visitor records, and guard data are stored in a completely separate database schema from every other customer. No data is ever shared or accessible across tenants.
 
 ---
 
@@ -2210,14 +2207,14 @@ Have specific compliance requirements? Talk to our team.
 
 **[META]**
 - Title: `SYAG Pricing — Transparent Plans for Compounds of Every Size`
-- Description: `SYAG offers three transparent pricing tiers for residential compounds and facilities. All modules included. No setup fees. No long-term contracts. Cancel anytime.`
+- Description: `SYAG offers three transparent pricing tiers for gated communities and facilities. All modules included. No setup fees. No long-term contracts. Cancel anytime.`
 
 ---
 
 **[HERO]**
 
 **Headline:**
-# Pricing that makes sense for compounds, not corporations.
+# Pricing that makes sense for gated communities and facilities, not corporations.
 
 **Subheadline:**
 Three tiers. All modules included. No hidden fees. No "contact us for pricing" surprises.
@@ -2229,7 +2226,7 @@ Three tiers. All modules included. No hidden fees. No "contact us for pricing" s
 **[SECTION: Pricing Tiers]**
 
 **Starter**
-For compounds getting started with digital security operations.
+For security teams getting started with digital security operations.
 
 - Price: {price}/month (billed monthly) · {price}/month (billed annually)
 - Up to {X} guards
@@ -2240,7 +2237,7 @@ For compounds getting started with digital security operations.
 - Email support
 
 **Professional** ★ Most popular
-For compound security teams managing multiple zones or larger guard forces.
+For facility security teams managing multiple zones or larger guard forces.
 
 - Price: {price}/month (billed monthly) · {price}/month (billed annually)
 - Up to {X} guards
@@ -2252,7 +2249,7 @@ For compound security teams managing multiple zones or larger guard forces.
 - Advanced analytics and reporting
 
 **Business**
-For large compounds, multi-site operations, and facilities with compliance requirements.
+For large facilities, multi-site operations, and facilities with compliance requirements.
 
 - Price: {price}/month (billed monthly) · {price}/month (billed annually)
 - Unlimited guards
@@ -2325,7 +2322,7 @@ Monthly plans have no contract — cancel anytime. Annual plans are billed annua
 Yes. The platform and mobile apps are available in Arabic and English on all plans at no extra cost.
 
 **Q: Do you offer a trial?**
-Contact us for a guided demo and pilot period discussion. We'll work out what makes sense for your compound.
+Contact us for a guided demo and pilot period discussion. We'll work out what makes sense for your facility.
 
 ---
 
@@ -2353,8 +2350,8 @@ Talk to us about a custom Business arrangement with volume pricing, dedicated su
 ---
 
 **[META]**
-- Title: `About SYAG — Physical Security Platform Built for MEA Compounds`
-- Description: `SYAG is built by Sazience to solve a gap no other platform addresses: a cloud-native PSIM built specifically for residential compounds and facilities in the MEA region.`
+- Title: `About SYAG — Physical Security Platform Built for MEA Facilities`
+- Description: `SYAG solves a gap no other platform addresses: a cloud-native PSIM covering all five security pillars, purpose-built for gated communities and managed facilities across the MEA region.`
 
 ---
 
@@ -2364,7 +2361,7 @@ Talk to us about a custom Business arrangement with volume pricing, dedicated su
 # We built what the market was missing.
 
 **Subheadline:**
-SYAG exists because no existing platform serves the compound security market the right way. Guard software is for security companies, not compound managers. Enterprise PSIM is for airports and banks. There was nothing in between — cloud-native, multi-tenant, covering all five pillars, accessible to mid-market MEA facilities.
+SYAG exists because no existing platform serves the facility security market the right way. Guard software is for security companies, not facility managers. Enterprise PSIM is for airports and banks. There was nothing in between — cloud-native, multi-tenant, covering all five pillars, accessible to mid-market MEA facilities.
 
 So we built it.
 
@@ -2375,20 +2372,20 @@ So we built it.
 **Headline:**
 ## Why SYAG exists
 
-Residential compounds and gated communities in the Gulf and MEA region represent a massive, underserved security operations market. Thousands of facilities each managing 10–50 security staff, hundreds or thousands of residents, and a complex mix of cameras, IoT sensors, and physical assets.
+Gated communities, managed facilities, and mid-market security operations across the Gulf and MEA region represent a massive, underserved market. Thousands of facilities each managing 10–50 security staff, hundreds or thousands of residents, and a complex mix of cameras, IoT sensors, and physical assets.
 
 Most of these facilities were operating with a combination of disconnected tools or manual processes — not because better options didn't exist globally, but because nothing was built for their context, their pricing expectations, their language, and their regulatory environment.
 
-SYAG was built to fill that gap. A compound-native PSIM SaaS that covers all five security pillars, deploys without infrastructure or integrators, and is designed from the ground up for the MEA market.
+SYAG was built to fill that gap. A cloud-native PSIM SaaS that covers all five security pillars, deploys without infrastructure or integrators, and is designed from the ground up for the MEA market.
 
 ---
 
 **[SECTION: Company]**
 
 **Headline:**
-## SYAG by Sazience
+## About SYAG
 
-SYAG is a product of **Sazience** — a software development company focused on building purposeful, production-grade platforms for underserved markets.
+SYAG is an independent product — designed, built, and operated by a focused team with deep experience in physical security operations and cloud software. We are not a systems integrator, a hardware vendor, or a division of a larger enterprise. SYAG is the product.
 
 - Founded: {year}
 - Headquarters: {city, country}
@@ -2402,7 +2399,7 @@ SYAG is a product of **Sazience** — a software development company focused on 
 We build SYAG for the people who run security operations at the places their communities live, work, and learn — not for the procurement committees of multinational corporations.
 
 **No complexity for complexity's sake**
-Every decision in SYAG — from architecture to pricing to UX — is made with the goal of reducing friction for the compound manager, not adding impressive-sounding features.
+Every decision in SYAG — from architecture to pricing to UX — is made with the goal of reducing friction for the facility manager, not adding impressive-sounding features.
 
 **MEA-first**
 SYAG is not a Western product localised for the Gulf. It is designed from first principles for the MEA market — in language, pricing, regulatory awareness, and operational context.
@@ -2439,7 +2436,7 @@ SYAG is an early-stage product with a clear mission, a working platform, and a m
 
 **[SECTION: What We're Building]**
 
-We're building SYAG — a cloud-native PSIM SaaS for MEA compounds and facilities. The platform is production-built on .NET 10, PostgreSQL, React, and Azure. We care deeply about architecture, code quality, and building things that genuinely work for the people who use them.
+We're building SYAG — a cloud-native PSIM SaaS for MEA gated communities and facilities. The platform is production-built on .NET 10, PostgreSQL, React, and Azure. We care deeply about architecture, code quality, and building things that genuinely work for the people who use them.
 
 ---
 
@@ -2499,14 +2496,14 @@ Don't see a role that fits? Send us a note anyway.
 # Get in touch.
 
 **Subheadline:**
-Whether you're evaluating SYAG for your compound, need technical support, or want to discuss a partnership — we're here.
+Whether you're evaluating SYAG for your facility, need technical support, or want to discuss a partnership — we're here.
 
 ---
 
 **[SECTION: Contact Options]**
 
 **Sales & Demo**
-Talk to us about SYAG for your compound.
+Talk to us about SYAG for your facility.
 Email: sales@syag.io
 WhatsApp: {number}
 Or: Request a demo → `/demo`
@@ -2531,7 +2528,7 @@ Email: hello@syag.io
 
 **[SECTION: Location]**
 
-**Sazience**
+**SYAG**
 {Address}
 {City, Country}
 
@@ -2545,7 +2542,7 @@ Email: hello@syag.io
 
 **[META]**
 - Title: `SYAG Partner Program — Integrators, Resellers & Technology Partners`
-- Description: `Partner with SYAG as a reseller, systems integrator, or technology partner. Bring the first compound-native PSIM SaaS to your clients across the MEA region.`
+- Description: `Partner with SYAG as a reseller, systems integrator, or technology partner. Bring the only cloud-native PSIM SaaS covering all five security pillars to your clients across the MEA region.`
 
 ---
 
@@ -2555,17 +2552,17 @@ Email: hello@syag.io
 # Bring the platform gap to your clients.
 
 **Subheadline:**
-SYAG fills a gap that no existing solution covers for MEA compound clients. If you work with residential compound operators, facility managers, or mid-market security buyers — there's an opportunity here.
+SYAG fills a gap that no existing solution covers for MEA gated community clients. If you work with gated community operators, facility managers, or mid-market security buyers — there's an opportunity here.
 
 ---
 
 **[SECTION: Partner Types]**
 
 **Reseller Partners**
-Security technology resellers and solution providers who want to add SYAG to their portfolio for compound and facility clients. Revenue share on closed deals.
+Security technology resellers and solution providers who want to add SYAG to their portfolio for gated community and facility clients. Revenue share on closed deals.
 
 **Systems Integrators**
-Integrators who deploy camera systems, access control, or IoT infrastructure in compounds and facilities. SYAG's integration architecture is designed to work with what you've already installed.
+Integrators who deploy camera systems, access control, or IoT infrastructure in gated communities and facilities. SYAG's integration architecture is designed to work with what you've already installed.
 
 **Technology Partners**
 Camera manufacturers, IoT device vendors, and security hardware makers who want native SYAG integration for their devices.
@@ -2595,17 +2592,17 @@ Camera manufacturers, IoT device vendors, and security hardware makers who want 
 
 **[META]**
 - Title: `Request a Demo — See SYAG in Your Compound`
-- Description: `Book a personalised 30-minute SYAG demo. We'll show you the platform in the context of your compound type. No sales pressure. Response within 24 hours.`
+- Description: `Book a personalised 30-minute SYAG demo. We'll show you the platform in the context of your facility type. No sales pressure. Response within 24 hours.`
 
 ---
 
 **[HERO]**
 
 **Headline:**
-# See SYAG in your compound.
+# See SYAG for your operation.
 
 **Subheadline:**
-A personalised 30-minute demo. We'll show you exactly how SYAG works for your compound type — residential, gated community, industrial, or other. No generic slides. No pressure.
+A personalised 30-minute demo. We'll show you exactly how SYAG works for your facility type — residential, gated community, industrial, or other. No generic slides. No pressure.
 
 ---
 
@@ -2633,7 +2630,7 @@ Prefer WhatsApp? Message us directly: {WhatsApp number}
 
 1. We'll review your submission and reach out within 24 hours
 2. We'll confirm a time and send you a calendar invite
-3. The demo is 30 minutes — personalised to your compound type
+3. The demo is 30 minutes — personalised to your facility type
 4. We'll show you the live platform, answer your questions, and discuss whether SYAG is the right fit
 5. No obligation, no pressure
 
@@ -2641,7 +2638,7 @@ Prefer WhatsApp? Message us directly: {WhatsApp number}
 
 **[SECTION: Trust Signals]**
 
-- {X} compounds secured across the MEA region
+- {X} facilities secured across the MEA region
 - All modules included — no per-feature demos
 - Arabic and English demo available
 - Data shared in this form is used only to prepare your demo — never sold or shared

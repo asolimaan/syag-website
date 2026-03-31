@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="Asset Management — Track Every Physical Asset in Your Facility | SYAG"
+  description="Register, track, and manage every physical asset in your facility. Cameras, guard equipment, vehicles, generators — with full lifecycle history and maintenance alerts."
+>
+  <PageHero
+    label="Asset Management"
+    headline="Everything you own. Tracked from day one."
+    subheadline="Spreadsheets and shared drives are not an asset management system. SYAG gives facility administrators a structured registry for every physical security asset — with lifecycle tracking, assignment history, and maintenance alerts built in."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">One register for everything in your facility</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">
+        Every physical asset in your facility has a record in SYAG: serial number, purchase date,
+        warranty status, assigned location, current custodian, and full event history.
+      </p>
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Asset types you can track</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Security cameras and recording equipment</li>
+        <li>Guard equipment (body cameras, torches, radios, vehicles)</li>
+        <li>Access control hardware (card readers, barriers, turnstiles)</li>
+        <li>Safety equipment (fire extinguishers, AEDs, first aid kits)</li>
+        <li>Facility infrastructure (generators, UPS systems, transformers)</li>
+        <li>IT equipment (servers, networking hardware, intercoms)</li>
+      </ul>
+      <p class="text-sm text-white/60">
+        Custom asset types: Define your own asset categories with custom attributes.
+      </p>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">From purchase to retirement — nothing gets lost</h2>
+    <div class="grid gap-4 md:grid-cols-5">
+      {[
+        { step: "Procurement", desc: "Record purchase date, supplier, warranty, and cost" },
+        { step: "Deployment", desc: "Assign to a site, zone, or individual guard" },
+        { step: "Maintenance", desc: "Log servicing events, schedule future maintenance, receive alerts when due" },
+        { step: "Incidents", desc: "Link incidents to assets (\"this camera triggered this event\")" },
+        { step: "Retirement", desc: "Decommission with reason and disposal record" },
+      ].map((s) => (
+        <div class="glass-card space-y-2">
+          <h3 class="text-sm font-semibold text-white">{s.step}</h3>
+          <p class="text-xs text-white/60">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Proactive maintenance. Not reactive repairs.</h2>
+    <div class="glass-card space-y-3">
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Configure maintenance schedules per asset type (annual, quarterly, monthly)</li>
+        <li>Receive alerts when maintenance is due — in-app, email, or SMS</li>
+        <li>Log completed maintenance with technician notes and attachments</li>
+        <li>Track maintenance history per asset over its full lifetime</li>
+        <li>Overdue maintenance flagged on the asset dashboard</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Always know who has what</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">Assign assets to guards, sites, or zones. Track check-out and check-in.</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Guard equipment check-out log</li>
+        <li>Unassigned asset alerts — flag equipment that hasn't been checked out for a shift</li>
+        <li>Transfer history — track when assets move between sites or custodians</li>
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG Asset Management in action."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

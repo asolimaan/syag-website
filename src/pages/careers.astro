@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+---
+
+<Layout
+  title="Careers at SYAG — Join the Team Building MEA's Security Platform"
+  description="SYAG is hiring engineers, product designers, and customer success professionals. Join a team building a product that protects communities across the MEA region."
+>
+  <PageHero
+    headline="Build technology that keeps communities safe."
+    subheadline="SYAG is an early-stage product with a clear mission, a working platform, and a market that nobody else is serving. If you want to build something that matters — and build it with people who care about craft — we'd like to talk."
+  />
+
+  <!-- WHAT WE'RE BUILDING -->
+  <section class="space-y-4">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">What we're building</h2>
+    <div class="glass-card">
+      <p class="text-sm text-white/60">
+        We're building SYAG — a cloud-native PSIM SaaS for MEA gated communities and managed facilities. The platform
+        is production-built on .NET 10, PostgreSQL, React, and Azure. We care deeply about architecture,
+        code quality, and building things that genuinely work for the people who use them.
+      </p>
+    </div>
+  </section>
+
+  <!-- OPEN ROLES -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">Open roles</h2>
+    <div class="space-y-6">
+      {[
+        {
+          category: "Engineering",
+          roles: ["Senior Backend Engineer — .NET / C#", "Frontend Engineer — React / TypeScript", "Mobile Engineer — React Native / Android"],
+        },
+        {
+          category: "Product & Design",
+          roles: ["Product Designer — Security Operations UX"],
+        },
+        {
+          category: "Customer Success",
+          roles: ["Customer Success Manager — GCC", "Technical Implementation Specialist"],
+        },
+        {
+          category: "Sales",
+          roles: ["Regional Sales Manager — KSA / UAE"],
+        },
+      ].map((section) => (
+        <div class="glass-card space-y-4">
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">{section.category}</p>
+          <ul class="space-y-2">
+            {section.roles.map((role) => (
+              <li class="text-sm text-white/70">{role}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <p class="text-sm text-white/50">All roles subject to availability. Listed positions may be filled — contact us to confirm.</p>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">How we work</h2>
+    <div class="grid gap-4 md:grid-cols-2">
+      {[
+        "Remote-first with team presence in {city}",
+        "Arabic and English working environment",
+        "Small team, high ownership, fast decisions",
+        "We ship, we learn, we improve",
+      ].map((item) => (
+        <div class="glass-card">
+          <p class="text-sm text-white/70">{item}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Don't see a role that fits?"
+    body="Send us a note anyway. We're always interested in people who care about what we're building."
+    primaryLabel="Contact us →"
+    primaryHref="/contact"
+  />
+</Layout>

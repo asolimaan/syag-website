@@ -1,0 +1,178 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="SYAG Platform — Cloud-Native Physical Security for Facilities"
+  description="SYAG is a multi-tenant SaaS platform unifying guard management, cameras, IoT, assets, visitors, and flow automation. Hosted on Azure. Built for MEA."
+>
+  <PageHero
+    headline="One cloud platform. Five security pillars. Built for the MEA region."
+    subheadline="SYAG is not a guard app or a camera system. It is a complete physical security operations platform that connects every signal in your facility — guards, cameras, IoT sensors, assets, and visitors — into a single operational picture."
+    cta={{ label: "Request a demo →", href: "/demo" }}
+  />
+
+  <!-- WHAT SYAG IS -->
+  <section class="space-y-8">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">
+      The platform your facility has been waiting for
+    </h2>
+    <div class="max-w-2xl space-y-4 text-sm text-white/60">
+      <p>
+        SYAG is a cloud-native, multi-tenant Physical Security Information Management (PSIM) platform
+        designed specifically for gated communities and mid-market managed facilities
+        in the Middle East and Africa.
+      </p>
+      <p>
+        Unlike enterprise PSIM systems built for airports and banks, SYAG is self-serve, affordable,
+        and deployable in weeks — not months. Unlike guard management tools, SYAG goes far beyond
+        scheduling and GPS tracking.
+      </p>
+    </div>
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {[
+        { num: "01", title: "Guard management", desc: "Scheduling, GPS tracking, patrols, register books" },
+        { num: "02", title: "Camera & VMS integration", desc: "Live camera events feeding the incident pipeline" },
+        { num: "03", title: "IoT device management", desc: "Panic buttons, sensors, UPS monitors, and more" },
+        { num: "04", title: "Asset management", desc: "Physical asset registry, lifecycle, and maintenance" },
+        { num: "05", title: "Visitor management", desc: "QR passes, check-in/out, blacklisting, overstay alerts" },
+      ].map((p) => (
+        <div class="glass-card space-y-2">
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/30">{p.num}</p>
+          <h3 class="text-base font-semibold text-white">{p.title}</h3>
+          <p class="text-sm text-white/60">{p.desc}</p>
+        </div>
+      ))}
+    </div>
+    <p class="text-sm text-white/60">
+      Plus: <strong class="text-white/80">Incident management</strong>, <strong class="text-white/80">Flow automation</strong>, and a live <strong class="text-white/80">Operations Center</strong>.
+    </p>
+  </section>
+
+  <!-- ARCHITECTURE VISUAL -->
+  <section class="space-y-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/50">How it connects</p>
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">Every signal. One platform.</h2>
+    <div class="glass-card space-y-6">
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 text-sm text-white/60">
+        {[
+          { source: "Camera events", arrow: "Camera BC → Flow BC → Incident BC" },
+          { source: "IoT device events", arrow: "IoT BC → Flow BC → Incident BC" },
+          { source: "Guard actions", arrow: "Guard BC → OpsCenter BC" },
+          { source: "Visitor events", arrow: "Visitor BC → Incident BC" },
+        ].map((item) => (
+          <div class="space-y-2 border border-white/10 rounded-xl p-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">{item.source}</p>
+            <p class="text-white/70">{item.arrow}</p>
+          </div>
+        ))}
+      </div>
+      <div class="border-t border-white/10 pt-4 text-center">
+        <p class="text-sm font-semibold text-white">→ Live Operations Center Dashboard</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MULTI-TENANCY -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">
+      Your facility. Your data. Always isolated.
+    </h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="glass-card space-y-4">
+        <p class="text-sm text-white/60">
+          SYAG uses a schema-per-tenant architecture. Every facility gets its own isolated data
+          environment within the platform. Your data never touches another tenant's records.
+        </p>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Your schema, your data, fully isolated</li>
+          <li>Role-based access: admins, supervisors, guards, ops center operators</li>
+          <li>Each site within your facility can have its own configuration</li>
+          <li>Data export at any time</li>
+        </ul>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">What this means in practice</h3>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Your facility admin cannot see another facility's data</li>
+          <li>Even if two facilities are in the same city, their data never intersects</li>
+          <li>You can request a full export of your data at any time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- USER ROLES -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">
+      Three interfaces. Built for three ways of working.
+    </h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="glass-card space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Guards</p>
+        <h3 class="text-base font-semibold text-white">Mobile App</h3>
+        <p class="text-sm text-white/60">
+          Clock in, scan checkpoints, file incident reports, receive dispatch notifications.
+          Works on entry-level Android devices. Available in Arabic and English.
+        </p>
+      </div>
+      <div class="glass-card space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Supervisors</p>
+        <h3 class="text-base font-semibold text-white">Mobile + Web</h3>
+        <p class="text-sm text-white/60">
+          See the live guard map, approve incidents, review patrol logs, and receive escalation
+          alerts. Access from mobile in the field or desktop in the control room.
+        </p>
+      </div>
+      <div class="glass-card space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Facility Admins</p>
+        <h3 class="text-base font-semibold text-white">Web Dashboard</h3>
+        <p class="text-sm text-white/60">
+          Configure sites, manage user access, review reports, set automation rules, and view
+          the full Operations Center dashboard.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPLOYMENT PROMISE -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">
+      Live in 30 days. No integrators required.
+    </h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Enterprise PSIM</th>
+            <th class="px-4 py-3 text-white font-semibold">SYAG</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {[
+            ["6–18 month deployment", "30-day onboarding"],
+            ["Certified system integrators required", "Self-serve setup"],
+            ["On-premises servers", "Azure cloud, fully managed"],
+            ["$50K–$1M+ upfront", "Monthly subscription"],
+            ["Built for airports and banks", "Built for your facility"],
+          ].map(([psim, syag]) => (
+            <tr>
+              <td class="px-4 py-3">{psim}</td>
+              <td class="px-4 py-3 text-white font-medium">{syag}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Ready to see SYAG in your facility?"
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+    secondaryLabel="Explore all modules →"
+    secondaryHref="/modules"
+  />
+</Layout>

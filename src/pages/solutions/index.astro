@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const solutions = [
+  { title: "Residential Communities", desc: "Guard management, visitor passes, camera events, and IoT sensors — unified for the facility manager who runs a community, not a corporation.", href: "/solutions/residential-compounds" },
+  { title: "Gated Communities", desc: "HOA-style management with resident-facing visitor pre-registration, gate access logging, and community-wide incident awareness.", href: "/solutions/gated-communities" },
+  { title: "Mixed-Use Developments", desc: "Office towers, retail floors, and residential units in the same perimeter. SYAG handles multi-zone operations with role-based access per tenant.", href: "/solutions/mixed-use" },
+  { title: "Industrial Facilities", desc: "High asset density, shift-heavy workforces, IoT-intensive environments. SYAG's asset management and IoT modules were built for this.", href: "/solutions/industrial" },
+  { title: "Healthcare Campuses", desc: "Patient safety, staff protection, contractor management, and 24/7 incident responsiveness. SYAG covers the operational security layer.", href: "/solutions/healthcare" },
+  { title: "Educational Campuses", desc: "Student safety, scheduled access for authorised visitors, patrol routes across large campuses, and emergency protocol automation.", href: "/solutions/education" },
+];
+---
+
+<Layout
+  title="SYAG Solutions — Security Operations for Communities & Managed Facilities"
+  description="SYAG is purpose-built for gated communities, mixed-use developments, industrial facilities, healthcare campuses, and educational institutions across the MEA region."
+>
+  <PageHero
+    headline="Built for your kind of facility."
+    subheadline="SYAG is not a generic security platform. It's designed around the specific operational realities of the facilities it serves. Find your facility type below."
+  />
+
+  <section class="space-y-6">
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {solutions.map((s) => (
+        <a href={s.href} class="glass-card space-y-3 block hover:border-white/30 transition-colors group">
+          <h3 class="text-base font-semibold text-white group-hover:text-white/90">{s.title}</h3>
+          <p class="text-sm text-white/60">{s.desc}</p>
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/40 group-hover:text-white/70">Learn more →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Not sure which solution fits your facility?"
+    body="Request a demo and we'll walk you through the right configuration for your specific setup."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

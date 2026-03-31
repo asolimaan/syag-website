@@ -1,0 +1,206 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CtaBand from "../components/CtaBand.astro";
+
+const features = [
+  { name: "Guard management", starter: true, pro: true, biz: true },
+  { name: "Patrol & tours", starter: true, pro: true, biz: true },
+  { name: "Camera & VMS", starter: true, pro: true, biz: true },
+  { name: "IoT devices", starter: true, pro: true, biz: true },
+  { name: "Asset management", starter: true, pro: true, biz: true },
+  { name: "Visitor management", starter: true, pro: true, biz: true },
+  { name: "Flow automation", starter: true, pro: true, biz: true },
+  { name: "Incident management", starter: true, pro: true, biz: true },
+  { name: "Operations Center", starter: true, pro: true, biz: true },
+  { name: "Advanced analytics", starter: false, pro: true, biz: true },
+  { name: "API access", starter: false, pro: false, biz: true },
+  { name: "Custom integrations", starter: false, pro: false, biz: true },
+  { name: "Compliance package", starter: false, pro: false, biz: "Add-on" },
+  { name: "SLA guarantee", starter: false, pro: false, biz: true },
+];
+
+const faqs = [
+  { q: "Do I pay per module?", a: "No. All 8 modules are included in every plan. You don't pay extra to activate cameras, IoT, or flow automation." },
+  { q: "What counts as a \"guard\"?", a: "Any user with the Guard or Supervisor role in your account. Admin users do not count toward the guard limit." },
+  { q: "Can I upgrade or downgrade my plan?", a: "Yes, at any time. Upgrades take effect immediately. Downgrades take effect at the next billing cycle." },
+  { q: "Is there a setup fee?", a: "No. There are no setup fees on Starter and Professional plans. Business plan includes a dedicated onboarding manager at no additional cost." },
+  { q: "Do you offer long-term contracts?", a: "Monthly plans have no contract — cancel anytime. Annual plans are billed annually. We don't require multi-year commitments." },
+  { q: "Is Arabic included?", a: "Yes. The platform and mobile apps are available in Arabic and English on all plans at no extra cost." },
+  { q: "Do you offer a trial?", a: "Contact us for a guided demo and pilot period discussion. We'll work out what makes sense for your facility." },
+];
+---
+
+<Layout
+  title="SYAG Pricing — Transparent Plans for Facilities of Every Size"
+  description="SYAG offers three transparent pricing tiers for gated communities and managed facilities. All modules included. No setup fees. No long-term contracts. Cancel anytime."
+>
+  <!-- HERO -->
+  <section class="space-y-6 py-12 md:py-16 text-center">
+    <h1 class="quartr-heading text-4xl font-semibold text-white md:text-5xl">
+      Pricing that makes sense for facilities, not corporations.
+    </h1>
+    <p class="mx-auto max-w-xl text-sm text-white/60">
+      Three tiers. All modules included. No hidden fees. No "contact us for pricing" surprises.
+    </p>
+  </section>
+
+  <!-- PRICING TIERS -->
+  <section class="space-y-8">
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- Starter -->
+      <div class="glass-card space-y-6">
+        <div class="space-y-2">
+          <h3 class="text-lg font-semibold text-white">Starter</h3>
+          <p class="text-sm text-white/60">For facilities getting started with digital security operations.</p>
+        </div>
+        <div>
+          <p class="text-2xl font-semibold text-white">{"{price}"}<span class="text-sm font-normal text-white/50">/month</span></p>
+        </div>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Up to {"{X}"} guards</li>
+          <li>{"{X}"} site</li>
+          <li>All 8 modules included</li>
+          <li>{"{X}"} IoT devices</li>
+          <li>{"{X}"} SMS credits/month</li>
+          <li>Email support</li>
+        </ul>
+        <a href="/demo" class="block rounded-full border border-white/30 px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/70 hover:border-white">
+          Request a demo
+        </a>
+      </div>
+
+      <!-- Professional -->
+      <div class="glass-card space-y-6 border border-white/20">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <h3 class="text-lg font-semibold text-white">Professional</h3>
+            <span class="rounded-full bg-white/10 px-2 py-0.5 text-xs font-semibold uppercase tracking-[0.2em] text-white/60">Most popular</span>
+          </div>
+          <p class="text-sm text-white/60">For facility security teams managing multiple zones or larger guard forces.</p>
+        </div>
+        <div>
+          <p class="text-2xl font-semibold text-white">{"{price}"}<span class="text-sm font-normal text-white/50">/month</span></p>
+        </div>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Up to {"{X}"} guards</li>
+          <li>Up to {"{X}"} sites</li>
+          <li>All 8 modules included</li>
+          <li>{"{X}"} IoT devices</li>
+          <li>{"{X}"} SMS credits/month</li>
+          <li>Priority email + WhatsApp support</li>
+          <li>Advanced analytics and reporting</li>
+        </ul>
+        <a href="/demo" class="block rounded-full bg-white px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-black">
+          Request a demo
+        </a>
+      </div>
+
+      <!-- Business -->
+      <div class="glass-card space-y-6">
+        <div class="space-y-2">
+          <h3 class="text-lg font-semibold text-white">Business</h3>
+          <p class="text-sm text-white/60">For large facilities, multi-site operations, and those with compliance requirements.</p>
+        </div>
+        <div>
+          <p class="text-2xl font-semibold text-white">{"{price}"}<span class="text-sm font-normal text-white/50">/month</span></p>
+        </div>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>Unlimited guards</li>
+          <li>Unlimited sites</li>
+          <li>All 8 modules included</li>
+          <li>Unlimited IoT devices</li>
+          <li>{"{X}"} SMS credits/month</li>
+          <li>Dedicated onboarding manager</li>
+          <li>Saudi NCA / UAE IA compliance package available</li>
+          <li>API access</li>
+          <li>SLA guarantee</li>
+        </ul>
+        <a href="/contact" class="block rounded-full border border-white/30 px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/70 hover:border-white">
+          Contact us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD-ONS -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-2xl font-semibold text-white">Add-ons</h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <tbody class="divide-y divide-white/10">
+          {[
+            ["Additional site", "{price}/month per site"],
+            ["Additional guards (Starter)", "{price}/month per 10 guards"],
+            ["IoT device pack (50 devices)", "{price}/month"],
+            ["SMS credits (500)", "{price}"],
+            ["Arabic content pack", "Included in all plans"],
+            ["Compliance package (NCA/IA)", "Contact us"],
+          ].map(([addon, price]) => (
+            <tr>
+              <td class="px-4 py-3">{addon}</td>
+              <td class="px-4 py-3 text-white/50">{price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FEATURE COMPARISON -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-2xl font-semibold text-white">Full feature comparison</h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Feature</th>
+            <th class="px-4 py-3">Starter</th>
+            <th class="px-4 py-3">Professional</th>
+            <th class="px-4 py-3 text-white font-semibold">Business</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {features.map((f) => (
+            <tr>
+              <td class="px-4 py-3 text-white/60">{f.name}</td>
+              <td class="px-4 py-3">{f.starter === true ? "✓" : f.starter === false ? "—" : f.starter}</td>
+              <td class="px-4 py-3">{f.pro === true ? "✓" : f.pro === false ? "—" : f.pro}</td>
+              <td class="px-4 py-3 text-white font-medium">{f.biz === true ? "✓" : f.biz === false ? "—" : f.biz}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-2xl font-semibold text-white">Frequently asked questions</h2>
+    <div class="space-y-4">
+      {faqs.map((faq) => (
+        <div class="glass-card space-y-2">
+          <h3 class="text-sm font-semibold text-white">{faq.q}</h3>
+          <p class="text-sm text-white/60">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ENTERPRISE -->
+  <section class="glass-card space-y-4 text-center">
+    <h2 class="text-lg font-semibold text-white">Managing 5 or more sites?</h2>
+    <p class="text-sm text-white/60">
+      Talk to us about a custom Business arrangement with volume pricing, dedicated support,
+      and a compliance package tailored to your regulatory requirements.
+    </p>
+    <a href="/contact" class="inline-block rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 hover:border-white">
+      Contact our team →
+    </a>
+  </section>
+
+  <CtaBand
+    headline="No setup fees. No long-term contracts. Cancel anytime."
+    primaryLabel="Start with a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

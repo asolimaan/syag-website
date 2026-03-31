@@ -6,7 +6,9 @@
       "Edit(/.claude/skills/frontend-design/**)",
       "Edit(/.claude/skills/section/**)",
       "Edit(/.claude/skills/seo/**)",
-      "Edit(/.claude/skills/demo-form/**)"
+      "Edit(/.claude/skills/demo-form/**)",
+      "Bash(npm run:*)",
+      "Read(//tmp/**)"
     ],
     "additionalDirectories": [
       "d:\\Projects\\SYAG\\src\\website\\.claude\\skills"

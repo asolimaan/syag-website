@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+---
+
+<Layout
+  title="SYAG Partner Program — Integrators, Resellers & Technology Partners"
+  description="Partner with SYAG as a reseller, systems integrator, or technology partner. Bring the first facility-native PSIM SaaS to your clients across the MEA region."
+>
+  <PageHero
+    headline="Bring the platform gap to your clients."
+    subheadline="SYAG fills a gap that no existing solution covers for MEA facility clients. If you work with gated community operators, facility managers, or mid-market security buyers — there's an opportunity here."
+  />
+
+  <!-- PARTNER TYPES -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">Partner types</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Reseller Partners</h3>
+        <p class="text-sm text-white/60">
+          Security technology resellers and solution providers who want to add SYAG to their portfolio
+          for facility and gated community clients. Revenue share on closed deals.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Systems Integrators</h3>
+        <p class="text-sm text-white/60">
+          Integrators who deploy camera systems, access control, or IoT infrastructure in gated communities
+          and managed facilities. SYAG's integration architecture is designed to work with what you've already installed.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Technology Partners</h3>
+        <p class="text-sm text-white/60">
+          Camera manufacturers, IoT device vendors, and security hardware makers who want native
+          SYAG integration for their devices.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PARTNER -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">Why partner with SYAG</h2>
+    <div class="grid gap-4 md:grid-cols-2">
+      {[
+        "Unoccupied market: no credible competitor covers what SYAG covers in MEA",
+        "Facility managers are looking for this solution — the sales conversation is straightforward",
+        "Cloud SaaS model means no infrastructure requirements for installation",
+        "MEA-native — Arabic, 4G, local compliance — removes the biggest objections",
+      ].map((reason) => (
+        <div class="glass-card">
+          <p class="text-sm text-white/70">{reason}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Ready to explore a partnership?"
+    primaryLabel="Contact our partnerships team →"
+    primaryHref="mailto:partnerships@syag.io"
+  />
+</Layout>

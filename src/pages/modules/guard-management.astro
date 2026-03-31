@@ -1,0 +1,103 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="Guard Management — Real-Time Guard Tracking & Scheduling | SYAG"
+  description="Track every guard in real time. Manage shift scheduling, patrol assignments, checkpoint verification, and incident reporting from one screen. Built for MEA gated communities and managed facilities."
+>
+  <PageHero
+    label="Guard Management"
+    headline="Know where every guard is. Every second."
+    subheadline="SYAG Guard Management gives facility supervisors and administrators complete real-time visibility into their security team — without radio calls, paper registers, or manual check-ins."
+    cta={{ label: "See it in action →", href: "/demo" }}
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Real-time guard map</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">
+        See every active guard's position on a live facility map. Updated continuously via the guard's
+        mobile app over 4G. No specialist hardware. No GPS trackers to purchase separately.
+      </p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Live positions on site map or satellite map</li>
+        <li>Guard status indicators: On duty, On patrol, Idle, On break, Off duty</li>
+        <li>Last seen timestamp for each guard</li>
+        <li>Alert when a guard hasn't moved in {"{X}"} minutes (configurable)</li>
+        <li>Full location history per guard per shift — downloadable as a report</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Scheduling that doesn't take all morning</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">
+        Create, publish, and update guard schedules from the web dashboard. Guards see their schedule
+        in the mobile app the moment it's published.
+      </p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Drag-and-drop schedule builder</li>
+        <li>Recurring shift templates — build once, reuse weekly</li>
+        <li>Open shift management — publish unfilled shifts for guards to claim</li>
+        <li>Overtime visibility — flag guards approaching overtime thresholds</li>
+        <li>Schedule export for payroll and compliance reporting</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">The digital shift register</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">
+        SYAG replaces paper logbooks with a structured digital register. Every shift starts and ends
+        with a handover record. All field definitions are customisable per facility.
+      </p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Configurable field templates — define what gets recorded at shift start, during the shift, and at shift end</li>
+        <li>Guards fill in the register from the mobile app</li>
+        <li>Supervisors review and approve submitted registers</li>
+        <li>Full register history per site — searchable, filterable, exportable</li>
+        <li>Supports Arabic and English inputs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Guard performance at a glance</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">Supervisors and admins see aggregated performance metrics across their security team:</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Patrol completion rate per guard per week</li>
+        <li>Checkpoint miss rate and trend</li>
+        <li>Incident reports filed per guard</li>
+        <li>On-time arrival percentage</li>
+        <li>Overtime hours by guard</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="glass-card space-y-3">
+    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Connects with</p>
+    <div class="flex flex-wrap gap-3">
+      {[
+        { label: "Patrol & Tours", href: "/modules/patrol" },
+        { label: "Incident Management", href: "/modules/incidents" },
+        { label: "Flow Automation", href: "/modules/flow" },
+      ].map((link) => (
+        <a href={link.href} class="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/60 hover:border-white/50 hover:text-white/80">
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG Guard Management live in your facility."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

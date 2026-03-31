@@ -1,0 +1,130 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="Security Operations for Gated Communities & Residential Facilities | SYAG"
+  description="SYAG is purpose-built for gated community and residential facility security. Replace your guard app, VMS, visitor register, and asset spreadsheet with one cloud platform. MEA-native."
+>
+  <PageHero
+    label="Residential Communities"
+    headline="Security operations for the places people call home."
+    subheadline="You manage guards, cameras, visitors, and equipment across a community of hundreds of families. SYAG gives you one unified platform for all of it — built specifically for the way gated communities and residential facilities in the Gulf and MEA region operate."
+    cta={{ label: "Request a demo →", href: "/demo" }}
+  />
+
+  <!-- THE PROBLEM -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">How facility security actually works today</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">Most residential facility security managers operate with a combination of:</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>A guard management app (or no app — just phone calls)</li>
+        <li>A separate VMS or NVR for cameras</li>
+        <li>A paper visitor register at the gate</li>
+        <li>A spreadsheet or nothing for asset tracking</li>
+        <li>WhatsApp groups for guard communications and supervisor alerts</li>
+      </ul>
+      <p class="text-sm text-white/60">
+        Nothing connects. When an incident happens at 2am, you're calling guards, checking camera
+        footage on a separate screen, and writing an incident report after the fact.
+      </p>
+      <p class="text-sm text-white/80 font-medium">This is the problem SYAG was built to solve.</p>
+    </div>
+  </section>
+
+  <!-- THE SYAG DIFFERENCE -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">One platform. Everything connected.</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Guard management</h3>
+        <p class="text-sm text-white/60">
+          Your guards operate from the SYAG mobile app. You see every guard's live position on a map
+          of your facility. Patrols are verified by checkpoint scans. Incidents are filed from the
+          field with photos and GPS.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Camera events that act</h3>
+        <p class="text-sm text-white/60">
+          When your camera detects motion in the car park at 3am, SYAG doesn't just record it — it
+          creates an incident, notifies your supervisor, and dispatches the nearest guard. Automatically.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Visitor management that works the way residents expect</h3>
+        <p class="text-sm text-white/60">
+          Residents pre-register visitors online. A QR pass is sent to the visitor via WhatsApp.
+          The guard scans it at the gate in 10 seconds. Overstays are flagged automatically. No paper forms.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Asset tracking without the spreadsheet</h3>
+        <p class="text-sm text-white/60">
+          Your cameras, vehicles, guard equipment, and generators are all registered in SYAG.
+          Maintenance alerts come to you before equipment fails.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEA SPECIFICS -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Built for how you actually operate</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">
+        SYAG is designed specifically for the gated community and residential facility context in
+        the MEA and GCC region:
+      </p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li><strong class="text-white/80">Arabic + English</strong> — platform and mobile apps available in both languages, RTL supported</li>
+        <li><strong class="text-white/80">4G mobile-first</strong> — guards work over standard cellular data, no Wi-Fi infrastructure required</li>
+        <li><strong class="text-white/80">Works on affordable devices</strong> — no expensive hardware required for guards</li>
+        <li><strong class="text-white/80">MEA-calibrated pricing</strong> — built for facility security budgets, not enterprise IT budgets</li>
+        <li><strong class="text-white/80">Compliance-ready</strong> — architecture supports Saudi NCA and UAE IA requirements</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- REPLACES TABLE -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">What SYAG replaces — and what it costs</h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">What you have today</th>
+            <th class="px-4 py-3">Monthly cost estimate</th>
+            <th class="px-4 py-3 text-white font-semibold">SYAG replaces it with</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {[
+            ["Guard management app", "{$X–Y}/mo", "Guard Management module"],
+            ["Separate VMS / NVR", "{$X–Y}/mo", "Camera & VMS module"],
+            ["Visitor register (paper / manual)", "Staff time", "Visitor Management module"],
+            ["Asset spreadsheet", "Staff time", "Asset Management module"],
+            ["Separate IoT monitoring", "{$X–Y}/mo", "IoT Devices module"],
+            ["Total fragmented stack", "{$2,000–5,000}/mo", "SYAG — from {price}/mo"],
+          ].map(([current, cost, syag]) => (
+            <tr>
+              <td class="px-4 py-3">{current}</td>
+              <td class="px-4 py-3 text-white/50">{cost}</td>
+              <td class="px-4 py-3 text-white font-medium">{syag}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Ready to run your facility from one screen?"
+    body="Request a demo — we'll show you your facility specifically."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

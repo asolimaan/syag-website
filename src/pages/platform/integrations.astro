@@ -1,0 +1,121 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const iotCategories = [
+  { type: "Panic buttons", use: "Guard or resident emergency alert" },
+  { type: "Environmental sensors", use: "Temperature, smoke, flood detection" },
+  { type: "UPS monitors", use: "Power failure detection" },
+  { type: "Access control points", use: "Door/gate open/close events" },
+  { type: "Perimeter sensors", use: "Fence vibration, beam break" },
+  { type: "Vehicle presence sensors", use: "Gate loop detection" },
+];
+---
+
+<Layout
+  title="SYAG Integrations — Cameras, IoT, SMS, and More"
+  description="SYAG integrates with LUNA/VisionLab cameras, Azure IoT Hub devices, SMS providers, and WhatsApp. Connect your existing security infrastructure to one platform."
+>
+  <PageHero
+    label="Integrations"
+    headline="Connect what you already have."
+    subheadline="SYAG is designed to work with the cameras, sensors, and devices already installed in your facility. No ripping and replacing. Connect your existing infrastructure and start seeing everything in one place."
+  />
+
+  <!-- CAMERA INTEGRATIONS -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Camera &amp; VMS integrations</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">LUNA / VisionLab (WebSocket)</h3>
+        <p class="text-sm text-white/60">
+          SYAG connects natively to LUNA and VisionLab camera management systems via real-time
+          WebSocket. Camera events — motion detection, intrusion alerts, ANPR triggers — are ingested
+          instantly and fed into the SYAG incident pipeline. No polling delays. No manual checks.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">ONVIF-compatible cameras</h3>
+        <p class="text-sm text-white/60">
+          SYAG supports ONVIF-compliant IP cameras from all major manufacturers. If your camera
+          speaks ONVIF, it connects to SYAG.
+        </p>
+      </div>
+    </div>
+    <div class="glass-card space-y-3">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">What camera integration means for your facility</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Camera events automatically create incidents</li>
+        <li>Camera events can trigger Flow automation rules</li>
+        <li>Live feeds accessible from the Operations Center</li>
+        <li>Event history per camera, searchable and linked to incidents</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- IOT -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">IoT device support</h2>
+    <p class="text-sm text-white/60 max-w-2xl">
+      SYAG connects to IoT devices via Azure IoT Hub (S1 Standard). SYAG maintains a system-managed
+      device type catalog — your team registers device instances by selecting from known types.
+      No custom event schemas required.
+    </p>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Device type</th>
+            <th class="px-4 py-3">Use case</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {iotCategories.map((d) => (
+            <tr>
+              <td class="px-4 py-3 text-white/80">{d.type}</td>
+              <td class="px-4 py-3">{d.use}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- NOTIFICATIONS -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Notification channels</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {[
+        { title: "SMS — Twilio", desc: "SYAG sends SMS alerts to guards, supervisors, and admins via Twilio. Incident escalations, missed patrol notifications, and visitor overstay alerts are delivered instantly." },
+        { title: "WhatsApp", desc: "Visitor QR passes are delivered via WhatsApp. Integration via WhatsApp Business API." },
+        { title: "Email", desc: "All platform notifications can also be delivered via email. Daily activity reports, incident summaries, and scheduled patrol reports sent automatically." },
+        { title: "Push notifications", desc: "Native push notifications via the SYAG mobile app for guards and supervisors. Works over 4G with no internet connectivity requirement beyond basic data." },
+      ].map((n) => (
+        <div class="glass-card space-y-2">
+          <h3 class="text-base font-semibold text-white">{n.title}</h3>
+          <p class="text-sm text-white/60">{n.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- API -->
+  <section class="space-y-4">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Open API for custom integrations</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">
+        SYAG provides a REST API for enterprise customers who need to integrate SYAG data with other
+        business systems — HR platforms, access control systems, reporting tools, or custom dashboards.
+      </p>
+      <p class="text-sm text-white/60">Enterprise API access is available on the Business plan.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Don't see your camera or device listed?"
+    body="Talk to us — we add new integrations regularly."
+    primaryLabel="Contact our integrations team →"
+    primaryHref="/contact"
+  />
+</Layout>

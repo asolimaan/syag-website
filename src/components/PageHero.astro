@@ -1,0 +1,37 @@
+---
+interface Props {
+  label?: string;
+  headline: string;
+  subheadline: string;
+  cta?: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
+}
+
+const { label, headline, subheadline, cta, secondaryCta } = Astro.props;
+---
+
+<section class="space-y-6 py-12 md:py-16">
+  {label && (
+    <p class="text-xs font-semibold uppercase tracking-[0.4em] text-white/50">{label}</p>
+  )}
+  <h1 class="quartr-heading text-4xl font-semibold text-white md:text-5xl max-w-3xl">
+    {headline}
+  </h1>
+  <p class="max-w-2xl text-sm leading-relaxed text-white/60">
+    {subheadline}
+  </p>
+  {(cta || secondaryCta) && (
+    <div class="flex flex-wrap items-center gap-3">
+      {cta && (
+        <a href={cta.href} class="rounded-full bg-white px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-black">
+          {cta.label}
+        </a>
+      )}
+      {secondaryCta && (
+        <a href={secondaryCta.href} class="rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 hover:border-white">
+          {secondaryCta.label}
+        </a>
+      )}
+    </div>
+  )}
+</section>

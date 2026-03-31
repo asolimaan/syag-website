@@ -1,0 +1,100 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="Camera & VMS Integration — Live Events, Not Just Recordings | SYAG"
+  description="SYAG integrates with LUNA/VisionLab cameras in real time. Camera events trigger incidents, flow automation rules, and guard dispatch — without a separate VMS dashboard."
+>
+  <PageHero
+    label="Camera & VMS"
+    headline="Your cameras don't just record. They act."
+    subheadline="Every other security tool treats cameras as passive recorders. SYAG treats them as active sensors — camera events feed directly into your incident pipeline and can trigger automated responses the moment something happens."
+    cta={{ label: "See it live →", href: "/demo" }}
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">From camera to action in seconds</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">
+        SYAG connects to your camera management system via WebSocket (LUNA / VisionLab). Events arrive
+        in real time — no polling, no delays. When a motion detection alarm fires at 2am, SYAG knows instantly.
+      </p>
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Supported camera events</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Motion detection</li>
+        <li>Intrusion zone breach</li>
+        <li>Line crossing</li>
+        <li>ANPR (automatic number plate recognition) — flagged plates trigger alerts</li>
+        <li>Tamper detection</li>
+        <li>Video loss / camera offline</li>
+        <li>Custom event types from your VMS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Camera events → Incidents → Action</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">Camera events don't sit in a separate dashboard. They flow directly into SYAG's incident pipeline.</p>
+      <div class="space-y-2 text-sm text-white/60 border border-white/10 rounded-xl p-4">
+        <p>1. Camera detects motion in restricted zone at 02:14</p>
+        <p>2. SYAG creates an incident automatically: "Motion detected — Zone B perimeter"</p>
+        <p>3. Flow rule notifies the on-duty supervisor</p>
+        <p>4. Supervisor views the camera feed from the Operations Center and dispatches a guard</p>
+        <p>5. Guard acknowledges, investigates, and closes the incident with a report</p>
+        <p>6. Full audit trail logged — from camera trigger to resolution</p>
+      </div>
+      <p class="text-sm text-white/60">This entire flow can be automated. Supervisors only intervene when the situation escalates.</p>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">One screen for everything — including your cameras</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">Operations Center operators access live camera feeds directly within SYAG.</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>View live feeds from any connected camera</li>
+        <li>Pull up the camera associated with any active incident in one click</li>
+        <li>Review recorded footage from incident timeline</li>
+        <li>Multi-camera view for control room operators</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Know when a camera goes offline — before anyone else does</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">SYAG monitors the health of every connected camera continuously.</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Camera status dashboard: online / offline / degraded</li>
+        <li>Offline duration tracking</li>
+        <li>Auto-alert to supervisor or maintenance team when camera goes down</li>
+        <li>History of camera health events per device</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="glass-card space-y-3">
+    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Connects with</p>
+    <div class="flex flex-wrap gap-3">
+      {[
+        { label: "Flow Automation", href: "/modules/flow" },
+        { label: "Incident Management", href: "/modules/incidents" },
+        { label: "IoT Devices", href: "/modules/iot" },
+      ].map((link) => (
+        <a href={link.href} class="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/60 hover:border-white/50 hover:text-white/80">
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See what it looks like when your cameras and operations work together."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "Asset-Heavy Operations",
+    desc: "Industrial facilities manage hundreds of physical assets — machinery, vehicles, safety equipment, fire systems. SYAG's Asset Management module provides a structured registry with maintenance scheduling and lifecycle tracking.",
+  },
+  {
+    title: "IoT Event Management",
+    desc: "Factory floor sensors, perimeter alarms, UPS systems, and generator monitors all generate events. SYAG normalises these events into a single incident pipeline and can automate responses via Flow rules.",
+  },
+  {
+    title: "Contractor Workforce Management",
+    desc: "Industrial facilities often have large rotating contractor populations. SYAG's visitor management handles contractor access passes, zone restrictions, and automatic expiry when work permits end.",
+  },
+  {
+    title: "Compliance-Grade Incident Records",
+    desc: "Industrial incident records must meet regulatory standards. SYAG's incident reports include full evidence chains, GPS-stamped timestamps, guard verification, and supervisor sign-off — all exportable as PDF for regulatory submission.",
+  },
+];
+---
+
+<Layout
+  title="Security Operations for Industrial Facilities | SYAG"
+  description="SYAG manages security for industrial facilities with high asset density, IoT-intensive environments, shift-heavy workforces, and compliance-critical incident documentation."
+>
+  <PageHero
+    label="Industrial Facilities"
+    headline="Industrial-scale security. Without the industrial-scale complexity."
+    subheadline="Industrial facilities have dense asset inventories, shift-heavy guard workforces, critical IoT infrastructure, and serious compliance requirements. SYAG's platform handles all of it."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG for your industrial facility."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

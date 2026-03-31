@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+import CtaBand from "../components/CtaBand.astro";
+---
+
+<Layout
+  title="About SYAG — Physical Security Platform Built for MEA Facilities"
+  description="SYAG is a cloud-native PSIM built specifically for gated communities and managed facilities in the MEA region."
+>
+  <PageHero
+    headline="We built what the market was missing."
+    subheadline="SYAG exists because no existing platform serves the facility security market the right way. Guard software is for security companies, not facility managers. Enterprise PSIM is for airports and banks. There was nothing in between — cloud-native, multi-tenant, covering all five pillars, accessible to mid-market MEA facilities. So we built it."
+  />
+
+  <!-- ORIGIN -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">Why SYAG exists</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">
+        Gated communities and managed facilities in the Gulf and MEA region represent a massive,
+        underserved security operations market. Thousands of facilities each managing 10–50 security
+        staff, hundreds or thousands of residents and occupants, and a complex mix of cameras, IoT sensors, and
+        physical assets.
+      </p>
+      <p class="text-sm text-white/60">
+        Most of these facilities were operating with a combination of disconnected tools or manual
+        processes — not because better options didn't exist globally, but because nothing was built
+        for their context, their pricing expectations, their language, and their regulatory environment.
+      </p>
+      <p class="text-sm text-white/60">
+        SYAG was built to fill that gap. A facility-native PSIM SaaS that covers all five security
+        pillars, deploys without infrastructure or integrators, and is designed from the ground up
+        for the MEA market.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPANY -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">SYAG</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">
+        SYAG is a cloud-native physical security operations platform built specifically for
+        gated communities and managed facilities in the MEA region.
+      </p>
+      <ul class="space-y-1 text-sm text-white/60">
+        <li>Founded: 2026</li>
+        <li>Headquarters: Cairo, Egypt</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">How we build</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">Built with purpose</h3>
+        <p class="text-sm text-white/60">
+          We build SYAG for the people who run security operations at the places their communities
+          live, work, and learn — not for the procurement committees of multinational corporations.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">No complexity for complexity's sake</h3>
+        <p class="text-sm text-white/60">
+          Every decision in SYAG — from architecture to pricing to UX — is made with the goal of
+          reducing friction for the facility manager, not adding impressive-sounding features.
+        </p>
+      </div>
+      <div class="glass-card space-y-3">
+        <h3 class="text-base font-semibold text-white">MEA-first</h3>
+        <p class="text-sm text-white/60">
+          SYAG is not a Western product localised for the Gulf. It is designed from first principles
+          for the MEA market — in language, pricing, regulatory awareness, and operational context.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See what we've built."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

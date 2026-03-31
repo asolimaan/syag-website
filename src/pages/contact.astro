@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Layout
+  title="Contact SYAG — Sales, Support, and Partnerships"
+  description="Contact the SYAG team for sales inquiries, support, partnerships, or compliance questions. Available via email, WhatsApp, and scheduled call."
+>
+  <PageHero
+    headline="Get in touch."
+    subheadline="Whether you're evaluating SYAG for your facility, need technical support, or want to discuss a partnership — we're here."
+  />
+
+  <!-- CONTACT OPTIONS -->
+  <section class="space-y-6">
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="glass-card space-y-4">
+        <h3 class="text-base font-semibold text-white">Sales &amp; Demo</h3>
+        <p class="text-sm text-white/60">Talk to us about SYAG for your facility.</p>
+        <ul class="space-y-1 text-sm text-white/60">
+          <li>Email: <a href="mailto:sales@syag.io" class="text-white/80 hover:text-white">sales@syag.io</a></li>
+          <li>WhatsApp: {"{number}"}</li>
+        </ul>
+        <a href="/demo" class="inline-block rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-black">
+          Request a demo →
+        </a>
+      </div>
+
+      <div class="glass-card space-y-4">
+        <h3 class="text-base font-semibold text-white">Support</h3>
+        <p class="text-sm text-white/60">For existing customers needing help.</p>
+        <ul class="space-y-1 text-sm text-white/60">
+          <li>Email: <a href="mailto:support@syag.io" class="text-white/80 hover:text-white">support@syag.io</a></li>
+        </ul>
+      </div>
+
+      <div class="glass-card space-y-4">
+        <h3 class="text-base font-semibold text-white">Partnerships &amp; Integrations</h3>
+        <p class="text-sm text-white/60">Discuss camera, IoT, or technology integrations.</p>
+        <ul class="space-y-1 text-sm text-white/60">
+          <li>Email: <a href="mailto:partnerships@syag.io" class="text-white/80 hover:text-white">partnerships@syag.io</a></li>
+        </ul>
+      </div>
+
+      <div class="glass-card space-y-4">
+        <h3 class="text-base font-semibold text-white">Compliance &amp; Enterprise</h3>
+        <p class="text-sm text-white/60">For NCA, IA, or custom enterprise requirements.</p>
+        <ul class="space-y-1 text-sm text-white/60">
+          <li>Email: <a href="mailto:enterprise@syag.io" class="text-white/80 hover:text-white">enterprise@syag.io</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="glass-card space-y-2">
+      <h3 class="text-base font-semibold text-white">General enquiries</h3>
+      <p class="text-sm text-white/60">Email: <a href="mailto:hello@syag.io" class="text-white/80 hover:text-white">hello@syag.io</a></p>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="glass-card space-y-3">
+    <h3 class="text-base font-semibold text-white">SYAG</h3>
+    <p class="text-sm text-white/60">{"{Address}"}</p>
+    <p class="text-sm text-white/60">{"{City, Country}"}</p>
+  </section>
+</Layout>

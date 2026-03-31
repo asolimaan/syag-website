@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "Zone-Based Access Control",
+    desc: "Define separate security zones within your development — residential towers, office floors, retail areas, underground parking. Assign different access rules and guard responsibilities per zone.",
+  },
+  {
+    title: "Multi-Tenant Visitor Management",
+    desc: "Office tenants pre-register their own visitors. Residents pre-register personal visitors. Retail staff manage deliveries. SYAG handles all visitor types with zone-appropriate QR passes and access windows.",
+  },
+  {
+    title: "Cross-Zone Incident Management",
+    desc: "An incident that starts in the retail area may involve a visitor who has access to the residential car park. SYAG links incidents across zones and gives the security operations team a complete picture regardless of where the incident started.",
+  },
+  {
+    title: "Unified Guard Management",
+    desc: "Guards assigned to different zones are all visible in the same live map. Supervisors can dispatch across zones and maintain facility-wide patrol coverage from a single screen.",
+  },
+];
+---
+
+<Layout
+  title="Security Operations for Mixed-Use Developments | SYAG"
+  description="Manage security across office, retail, and residential zones in one SYAG platform. Multi-site architecture, role-based access per zone, and unified incident management."
+>
+  <PageHero
+    label="Mixed-Use Developments"
+    headline="One perimeter. Multiple zones. One platform."
+    subheadline="Mixed-use developments blend residential, commercial, and retail in a single security perimeter — but each zone has different access rules, different visitor profiles, and different risk patterns. SYAG handles all of it from a single admin dashboard."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG for your mixed-use development."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

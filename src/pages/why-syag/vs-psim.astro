@@ -1,0 +1,97 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="SYAG vs. Enterprise PSIM — Without the Complexity or the Cost"
+  description="Genetec, Milestone, and Advancis cover cameras and IoT. But they cost $50K–$1M+, require certified integrators, and take 6–18 months to deploy. SYAG is live in 30 days."
+>
+  <PageHero
+    label="SYAG vs. Enterprise PSIM"
+    headline="Enterprise PSIM wasn't built for your facility. It was built for Heathrow."
+    subheadline="Genetec, Milestone, Advancis, and Honeywell are powerful platforms. They cover cameras, IoT, and building systems with serious depth. But they are designed for airports, banks, government facilities, and Fortune 500 campuses. For a gated community or mid-market facility, they bring complexity and cost that is completely out of proportion."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Three reasons enterprise PSIM doesn't work for your facility</h2>
+    <div class="space-y-4">
+      {[
+        { num: "1", title: "The cost is prohibitive", desc: "Enterprise PSIM deployments start at $50,000 and regularly exceed $1,000,000 when hardware, integration, licensing, and implementation are included. Annual maintenance fees add 15–25% of the initial cost every year." },
+        { num: "2", title: "You need a specialist to set it up", desc: "Enterprise PSIM platforms require certified system integrators — specialists who configure the platform, install the hardware, write the integration scripts, and maintain the system. This is a multi-month project. If something changes in your setup, you call the integrator." },
+        { num: "3", title: "It wasn't designed for your use case", desc: "Enterprise PSIM is built for complex multi-building facilities with hundreds of cameras and strict regulatory requirements. Gated communities and mid-market managed facilities don't need a $500K airport security system." },
+      ].map((reason) => (
+        <div class="glass-card space-y-2">
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Reason {reason.num}</p>
+          <h3 class="text-base font-semibold text-white">{reason.title}</h3>
+          <p class="text-sm text-white/60">{reason.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">What enterprise PSIM covers — and where it falls short</h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Capability</th>
+            <th class="px-4 py-3">Genetec</th>
+            <th class="px-4 py-3">Milestone</th>
+            <th class="px-4 py-3">Advancis</th>
+            <th class="px-4 py-3 text-white font-semibold">SYAG</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {[
+            ["Camera / VMS integration", "✓", "✓", "✓", "✓"],
+            ["IoT device management", "✓", "Partial", "✓", "✓"],
+            ["Flow / rule automation", "✓", "✗", "✓", "✓"],
+            ["Guard management", "✗", "✗", "✗", "✓"],
+            ["Visitor management", "✗", "✗", "✗", "✓"],
+            ["Asset management", "Partial", "✗", "Partial", "✓"],
+            ["Cloud SaaS (no on-prem)", "Partial", "✗", "✗", "✓"],
+            ["Self-serve deployment", "✗", "✗", "✗", "✓"],
+            ["MEA-native, Arabic", "✗", "✗", "✗", "✓"],
+            ["Facility pricing", "✗", "✗", "✗", "✓"],
+            ["Deployment time", "6–18 months", "6–18 months", "6–18 months", "30 days"],
+          ].map(([cap, g, m, a, syag]) => (
+            <tr>
+              <td class="px-4 py-3 text-white/60">{cap}</td>
+              <td class="px-4 py-3">{g}</td>
+              <td class="px-4 py-3">{m}</td>
+              <td class="px-4 py-3">{a}</td>
+              <td class="px-4 py-3 text-white font-semibold">{syag}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="space-y-4">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">The same 5 pillars. Without the enterprise overhead.</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">
+        SYAG provides the same five capability pillars as enterprise PSIM — camera integration, IoT,
+        flow automation, plus guard management and visitor management that PSIM systems lack — in a
+        cloud-native SaaS model that:
+      </p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Requires no on-premises infrastructure</li>
+        <li>Requires no certified system integrator</li>
+        <li>Deploys in 30 days, not 6 months</li>
+        <li>Starts at {"{price}"}/month, not $50,000</li>
+        <li>Is accessible to facility managers, not just enterprise IT departments</li>
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See what enterprise-grade security operations look like at facility-friendly pricing."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

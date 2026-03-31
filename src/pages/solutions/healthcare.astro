@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "Controlled Visitor Access",
+    desc: "Healthcare facilities need strict visitor management — visiting hours, patient zone restrictions, contractor clearances. SYAG's QR-based visitor system manages all of this with full audit trail.",
+  },
+  {
+    title: "Incident Documentation for Clinical Environments",
+    desc: "Every incident in a healthcare setting — from an altercation in the waiting area to a patient elopement — needs immediate response and complete documentation. SYAG's incident management captures everything in real time with evidence attachment.",
+  },
+  {
+    title: "Guard Coverage in Complex Buildings",
+    desc: "Multi-floor hospital campuses require structured patrol coverage. SYAG's checkpoint verification system ensures every patrol route is completed and compliance can be demonstrated to accreditation bodies.",
+  },
+  {
+    title: "Staff Safety",
+    desc: "Clinical staff facing workplace violence can trigger a panic alert from a mobile device or fixed panic button. SYAG's IoT integration routes the alert to the nearest security guard with GPS-precise location in seconds.",
+  },
+];
+---
+
+<Layout
+  title="Healthcare Campus Security Operations | SYAG"
+  description="SYAG gives healthcare security teams real-time guard management, patient area monitoring, contractor access control, and incident reporting built for clinical environments."
+>
+  <PageHero
+    label="Healthcare Campuses"
+    headline="Security that protects the people who protect patients."
+    subheadline="Healthcare environments require security operations that are responsive, well-documented, and respectful of the clinical environment. SYAG provides a structured operational platform for hospital and clinic security teams."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG for your healthcare campus."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DemoForm from "../components/DemoForm.tsx";
+---
+
+<Layout
+  title="Request a Demo — See SYAG in Your Facility"
+  description="Book a personalised 30-minute SYAG demo. We'll show you the platform in the context of your facility type. No sales pressure. Response within 24 hours."
+>
+  <div class="grid gap-16 md:grid-cols-2 py-12 md:py-16">
+    <!-- LEFT COLUMN -->
+    <div class="space-y-10">
+      <div class="space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-white/50">Request a Demo</p>
+        <h1 class="quartr-heading text-4xl font-semibold text-white md:text-5xl">
+          See SYAG in your facility.
+        </h1>
+        <p class="text-sm leading-relaxed text-white/60">
+          A personalised 30-minute demo. We'll show you exactly how SYAG works for your facility
+          type — gated community, industrial, healthcare, or other. No generic slides. No pressure.
+        </p>
+      </div>
+
+      <!-- WHAT TO EXPECT -->
+      <div class="space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/50">What happens next</p>
+        <div class="space-y-3">
+          {[
+            "We'll review your submission and reach out within 24 hours",
+            "We'll confirm a time and send you a calendar invite",
+            "The demo is 30 minutes — personalised to your facility type",
+            "We'll show you the live platform, answer your questions, and discuss whether SYAG is the right fit",
+            "No obligation, no pressure",
+          ].map((step, i) => (
+            <div class="flex items-start gap-3">
+              <span class="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full border border-white/20 text-xs font-semibold text-white/40">{i + 1}</span>
+              <p class="text-sm text-white/60">{step}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- TRUST SIGNALS -->
+      <div class="glass-card space-y-3">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Why facility managers trust SYAG</p>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>{"{X}"} facilities secured across the MEA region</li>
+          <li>All modules included — no per-feature demos</li>
+          <li>Arabic and English demo available</li>
+          <li>Data shared in this form is used only to prepare your demo — never sold or shared</li>
+        </ul>
+      </div>
+
+      <!-- WHATSAPP ALTERNATIVE -->
+      <p class="text-sm text-white/50">
+        Prefer WhatsApp? Message us directly: <span class="text-white/70">{"{WhatsApp number}"}</span>
+      </p>
+    </div>
+
+    <!-- RIGHT COLUMN — FORM -->
+    <div class="glass-card">
+      <DemoForm client:load />
+    </div>
+  </div>
+</Layout>

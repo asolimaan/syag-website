@@ -1,0 +1,86 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+---
+
+<Layout
+  title="Why SYAG — The Only Facility PSIM Platform Built for MEA"
+  description="SYAG covers all five security pillars, deploys in 30 days, requires no servers or integrators, and is priced for MEA facilities — not Western enterprise budgets."
+>
+  <PageHero
+    headline="The only PSIM built for facilities, not corporations."
+    subheadline="There are many security software tools. None of them do what SYAG does — all five capability pillars, cloud SaaS, MEA-native, deployable in 30 days."
+  />
+
+  <!-- THREE REASONS -->
+  <section class="space-y-8">
+    <div class="space-y-6">
+      <div class="glass-card space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Reason 1</p>
+        <h3 class="text-lg font-semibold text-white">We cover all five pillars. Nobody else does.</h3>
+        <p class="text-sm text-white/60">
+          Guard management software covers guards. Video management systems cover cameras. Enterprise
+          PSIM covers everything — but only for airports and government buildings.
+        </p>
+        <p class="text-sm text-white/60">
+          SYAG is the first platform to combine guard management, camera events, IoT device management,
+          asset tracking, and visitor management in a single multi-tenant SaaS product accessible to
+          mid-market facilities.
+        </p>
+        <a href="/why-syag/vs-sgms" class="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 hover:text-white">
+          See the full capability comparison →
+        </a>
+      </div>
+
+      <div class="glass-card space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Reason 2</p>
+        <h3 class="text-lg font-semibold text-white">We're cloud SaaS. No servers, no integrators, no capex.</h3>
+        <p class="text-sm text-white/60">
+          Every enterprise PSIM platform in existence requires on-premises infrastructure, certified
+          system integrators, and 6–18 month deployment timelines. SYAG deploys in 30 days.
+          You log in and start.
+        </p>
+        <a href="/why-syag/vs-psim" class="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 hover:text-white">
+          See SYAG vs. Enterprise PSIM →
+        </a>
+      </div>
+
+      <div class="glass-card space-y-4">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Reason 3</p>
+        <h3 class="text-lg font-semibold text-white">We're built for MEA facilities, not Western enterprise.</h3>
+        <p class="text-sm text-white/60">
+          Most security software is built for North American or European buyers. SYAG is designed
+          from the ground up for gated communities and mid-market managed facilities
+          in the Gulf and broader MEA region — with Arabic language support, 4G-first mobile
+          architecture, MEA-calibrated pricing, and a compliance path for Saudi NCA and UAE IA
+          requirements.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB-PAGE LINKS -->
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-2xl font-semibold text-white">Go deeper</h2>
+    <div class="grid gap-4 md:grid-cols-2">
+      {[
+        { title: "SYAG vs. Guard Software", desc: "Why TrackTik, Belfry, or Silvertrac aren't enough", href: "/why-syag/vs-sgms" },
+        { title: "SYAG vs. Enterprise PSIM", desc: "Why Genetec or Milestone are overkill", href: "/why-syag/vs-psim" },
+        { title: "Security & Compliance", desc: "How your data is protected", href: "/why-syag/security" },
+        { title: "Pricing", desc: "Transparent tiers, no surprises", href: "/pricing" },
+      ].map((link) => (
+        <a href={link.href} class="glass-card space-y-1 block hover:border-white/30 transition-colors group">
+          <h3 class="text-base font-semibold text-white group-hover:text-white/90">{link.title}</h3>
+          <p class="text-sm text-white/60">{link.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Ready to see what all five pillars look like in your facility?"
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "Visitor Access at Scale",
+    desc: "In a gated community of 500+ villas, gate management is a constant operational challenge. SYAG's QR-based visitor system reduces gate dwell time, eliminates the paper register, and gives administrators a searchable visit history for every resident.",
+  },
+  {
+    title: "Guard Coverage Across Large Perimeters",
+    desc: "Large gated communities often have extensive perimeter fencing, multiple entry points, and spread-out patrol routes. SYAG tracks every guard across the full site, verifies checkpoint completion at each patrol point, and alerts supervisors when coverage gaps appear.",
+  },
+  {
+    title: "Community Incident Management",
+    desc: "From a parking dispute to a medical emergency, incidents in a gated community require fast response and clear documentation. SYAG gives guards a structured incident reporting tool and gives management a full incident history — useful for insurance, legal, and community governance.",
+  },
+  {
+    title: "Contractor and Delivery Management",
+    desc: "Regular contractors, maintenance teams, and delivery drivers need structured access without permanent credentials. SYAG's time-limited QR passes handle contractor access automatically — passes expire when the work period ends.",
+  },
+];
+---
+
+<Layout
+  title="Security Platform for Gated Communities | SYAG"
+  description="SYAG gives gated community managers real-time control over visitor access, guard patrols, and security incidents — from one cloud platform built for MEA communities."
+>
+  <PageHero
+    label="Gated Communities"
+    headline="Security operations for communities, not corporations."
+    subheadline="Gated communities have unique security dynamics — resident expectations are high, visitor volumes are large, and the security team is the first point of contact for everything from deliveries to emergencies. SYAG is designed for this."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG for your gated community."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>
