@@ -9,7 +9,7 @@ import CtaBand from "../../components/CtaBand.astro";
   description="SYAG is a multi-tenant SaaS platform unifying guard management, cameras, IoT, assets, visitors, and flow automation. Hosted on Azure. Built for MEA."
 >
   <PageHero
-    headline="One cloud platform. Five security pillars. Built for the MEA region."
+    headline="One cloud platform. Six security pillars. Built for the MEA region."
     subheadline="SYAG is not a guard app or a camera system. It is a complete physical security operations platform that connects every signal in your facility — guards, cameras, IoT sensors, assets, and visitors — into a single operational picture."
     cta={{ label: "Request a demo →", href: "/demo" }}
   />
@@ -38,6 +38,7 @@ import CtaBand from "../../components/CtaBand.astro";
         { num: "03", title: "IoT device management", desc: "Panic buttons, sensors, UPS monitors, and more" },
         { num: "04", title: "Asset management", desc: "Physical asset registry, lifecycle, and maintenance" },
         { num: "05", title: "Visitor management", desc: "QR passes, check-in/out, blacklisting, overstay alerts" },
+        { num: "06", title: "Incident management", desc: "Detection, response workflows, resolution tracking, evidence logs" },
       ].map((p) => (
         <div class="glass-card space-y-2">
           <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/30">{p.num}</p>
@@ -47,7 +48,7 @@ import CtaBand from "../../components/CtaBand.astro";
       ))}
     </div>
     <p class="text-sm text-white/60">
-      Plus: <strong class="text-white/80">Incident management</strong>, <strong class="text-white/80">Flow automation</strong>, and a live <strong class="text-white/80">Operations Center</strong>.
+      Plus: <strong class="text-white/80">Flow automation</strong> and a live <strong class="text-white/80">Operations Center</strong>.
     </p>
   </section>
 
