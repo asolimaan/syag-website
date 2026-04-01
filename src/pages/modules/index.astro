@@ -3,68 +3,108 @@ import Layout from "../../layouts/Layout.astro";
 import PageHero from "../../components/PageHero.astro";
 import CtaBand from "../../components/CtaBand.astro";
 
-const modules = [
-  { num: "01", title: "Guard Management", desc: "Track, schedule, and manage your entire security team from one screen.", href: "/modules/guard-management" },
-  { num: "02", title: "Patrol & Tours", desc: "Verify guard presence at every checkpoint. Every time.", href: "/modules/patrol" },
-  { num: "03", title: "Camera & VMS", desc: "Your cameras don't just record. They act.", href: "/modules/cameras" },
-  { num: "04", title: "IoT Devices", desc: "Connect every sensor, button, and monitor to your security operations.", href: "/modules/iot" },
-  { num: "05", title: "Asset Management", desc: "Track everything you own, from purchase to retirement.", href: "/modules/assets" },
-  { num: "06", title: "Visitor Management", desc: "Know exactly who enters your facility — and when they leave.", href: "/modules/visitors" },
-  { num: "07", title: "Flow Automation", desc: "Build your security logic visually. No developer required.", href: "/modules/flow" },
-  { num: "08", title: "Incident Management", desc: "From alert to resolution, nothing falls through the cracks.", href: "/modules/incidents" },
+const categories = [
+  {
+    label: "Security Operations",
+    desc: "Detect, respond, and resolve incidents from a single operational view.",
+    products: [
+      { title: "Incident Management", desc: "From the first alert to final resolution, every incident is tracked, assigned, and closed — nothing falls through the cracks.", href: "/modules/incidents" },
+      { title: "Smart Alerts", desc: "Automated notifications triggered by cameras, sensors, or overdue patrols. The right person is warned at the right time.", href: "/modules/flow" },
+      { title: "Operations Center", desc: "A live dashboard that shows everything happening across your facility right now — guards, incidents, visitors, and sensors.", href: "/modules/incidents" },
+    ],
+  },
+  {
+    label: "Workforce & Patrols",
+    desc: "Know where every guard is, verify they did their job, and manage shifts without spreadsheets.",
+    products: [
+      { title: "Guard Management", desc: "Schedule shifts, track GPS locations, manage attendance, and oversee your entire security team from one screen.", href: "/modules/guard-management" },
+      { title: "Patrol & Checkpoints", desc: "Verify guard presence at every checkpoint with QR scans and proof of visit. No patrol goes unconfirmed.", href: "/modules/patrol" },
+      { title: "Guard Register", desc: "A digital log of every guard action — clock-ins, patrol completions, incident responses — all timestamped and tamper-proof.", href: "/modules/guard-management" },
+    ],
+  },
+  {
+    label: "Visitor & Access Control",
+    desc: "Know who is on your premises at all times — from arrival to departure.",
+    products: [
+      { title: "Visitor Management", desc: "Issue QR passes, track check-ins and check-outs, flag overstays, and blacklist unwanted visitors — all automated.", href: "/modules/visitors" },
+      { title: "Access Records", desc: "A complete history of who entered, when, and through which gate. Searchable and exportable for any audit.", href: "/modules/visitors" },
+    ],
+  },
+  {
+    label: "Smart Monitoring",
+    desc: "Connect your cameras and sensors to a security picture that acts — not just watches.",
+    products: [
+      { title: "Camera & Video", desc: "Your cameras don't just record — they trigger alerts, create incidents, and feed your operations center in real time.", href: "/modules/cameras" },
+      { title: "Smart Sensors", desc: "Panic buttons, motion detectors, UPS monitors, and environmental sensors — all connected to your incident pipeline.", href: "/modules/iot" },
+      { title: "Equipment & Assets", desc: "Track every piece of security equipment from purchase to retirement. Know what's working, what's due for maintenance, and what's missing.", href: "/modules/assets" },
+    ],
+  },
+  {
+    label: "Reports & Records",
+    desc: "Prove what happened, when, and who responded. Every event is documented.",
+    products: [
+      { title: "Audit & Compliance", desc: "Track every action across your system with a secure, tamper-proof history. Built for the compliance standards MEA facilities require.", href: "/modules/guard-management" },
+      { title: "Operational Reports", desc: "Shift summaries, patrol completion rates, incident response times — generated automatically, ready when you need them.", href: "/modules/incidents" },
+    ],
+  },
+  {
+    label: "Administration & Setup",
+    desc: "Configure your facility, assign roles, and automate workflows without calling IT.",
+    products: [
+      { title: "Flow Automation", desc: "Build your security logic visually — no developer required. When X happens, automatically do Y. Set it once, it runs forever.", href: "/modules/flow" },
+      { title: "Site Configuration", desc: "Define your sites, gates, checkpoints, and zones. Assign guards and supervisors. Set schedules and rules.", href: "/modules/guard-management" },
+      { title: "Roles & Permissions", desc: "Control who sees what — facility admins, supervisors, and guards each get their own view with the right level of access.", href: "/modules/guard-management" },
+    ],
+  },
 ];
 ---
 
 <Layout
-  title="SYAG Modules — Guard, Camera, IoT, Assets, Visitors, Flow, Incidents"
-  description="Explore all 8 SYAG modules. Guard management, cameras, IoT devices, asset tracking, visitor management, flow automation, incident management, and operations center — all included."
+  title="SYAG Products — Everything Your Facility Needs in One Platform"
+  description="Explore SYAG's complete product suite. Guard management, incident response, visitor control, smart monitoring, compliance reporting, and workflow automation — all in one platform."
 >
   <PageHero
-    headline="Every module your facility needs. All in one platform."
-    subheadline="SYAG's modules work independently or together. Start with the capability that matters most to your facility today — and activate more as your operations grow. All modules are included in every plan. No per-module fees."
+    headline="One platform. <span style='color:#4ade80'>Complete</span> operational control."
+    subheadline="SYAG replaces your scattered tools with six integrated product categories — guard management, incident response, visitor control, smart monitoring, compliance reporting, and workflow automation. Every product works standalone. Every product works better together."
+    cta={{ label: "Request a demo →", href: "/demo" }}
   />
 
-  <!-- MODULE GRID -->
-  <section class="space-y-8">
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      {modules.map((m) => (
-        <a href={m.href} class="glass-card space-y-3 block hover:border-white/30 transition-colors group">
-          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/30">{m.num}</p>
-          <h3 class="text-base font-semibold text-white group-hover:text-white/90">{m.title}</h3>
-          <p class="text-sm text-white/60">{m.desc}</p>
-          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/40 group-hover:text-white/70">Explore →</span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <!-- HOW MODULES CONNECT -->
-  <section class="space-y-6">
-    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">Modules that talk to each other</h2>
-    <p class="text-sm text-white/60 max-w-2xl">
-      SYAG modules don't operate in silos. They share a common event and incident pipeline:
-    </p>
-    <div class="space-y-4">
-      {[
-        "A camera detects motion → Flow creates an incident → Guard Management dispatches the nearest guard → Incident is resolved and logged",
-        "A visitor overstays their expected departure → Flow sends an alert → Supervisor receives notification → Incident is created",
-        "An IoT panic button is pressed → Incident opens immediately → Ops Center operator sees it live → Guard is dispatched",
-      ].map((flow) => (
-        <div class="glass-card">
-          <p class="text-sm text-white/70">{flow}</p>
+  <!-- PRODUCT CATEGORIES -->
+  <section class="space-y-16">
+    {categories.map((cat) => (
+      <div class="space-y-6">
+        <div class="space-y-2">
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">{cat.label}</p>
+          <p class="text-sm text-white/60">{cat.desc}</p>
         </div>
-      ))}
-    </div>
-    <p class="text-sm text-white/60">
-      The result: a complete operational picture, not a collection of disconnected tools.
-    </p>
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {cat.products.map((p) => (
+            <a href={p.href} class="glass-card space-y-3 block hover:border-white/30 transition-colors group">
+              <h3 class="text-base font-semibold text-white group-hover:text-white/90">{p.title}</h3>
+              <p class="text-sm text-white/60">{p.desc}</p>
+              <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/40 group-hover:text-white/70">Learn more →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
   </section>
 
-  <CtaBand
-    headline="See all modules in action."
-    primaryLabel="Request a demo →"
-    primaryHref="/demo"
-    secondaryLabel="See pricing →"
-    secondaryHref="/pricing"
-  />
+  <!-- CLOSING -->
+  <section class="glass-card space-y-6 text-center py-12">
+    <h2 class="quartr-heading text-3xl font-semibold text-white md:text-4xl">
+      One platform. Full <span style="color:#35E0FF">visibility</span>. <span style="color:#4ade80">Faster</span> response.
+    </h2>
+    <p class="mx-auto max-w-lg text-sm text-white/60">
+      Every product in SYAG connects to the same operational picture. Incidents link to guards. Guards link to patrols. Visitors link to gates. Sensors link to alerts. You don't manage six tools — you manage one facility.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="/demo" class="rounded-full bg-white px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-black">
+        Request a demo →
+      </a>
+      <a href="/pricing" class="rounded-full border border-white/30 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 hover:border-white">
+        See pricing →
+      </a>
+    </div>
+  </section>
 </Layout>

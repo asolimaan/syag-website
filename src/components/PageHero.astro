@@ -15,7 +15,7 @@ const { label, headline, subheadline, cta, secondaryCta } = Astro.props;
     <p class="text-xs font-semibold uppercase tracking-[0.4em] text-white/50">{label}</p>
   )}
   <h1 class="quartr-heading text-4xl font-semibold text-white md:text-5xl max-w-3xl">
-    {headline}
+    <Fragment set:html={headline} />
   </h1>
   <p class="max-w-2xl text-sm leading-relaxed text-white/60">
     {subheadline}
