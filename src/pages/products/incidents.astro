@@ -1,0 +1,113 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const lifecycle = [
+  { status: "Open", desc: "Incident created, not yet assigned" },
+  { status: "Assigned", desc: "Assigned to a specific guard or supervisor" },
+  { status: "In Progress", desc: "Guard acknowledged and is responding" },
+  { status: "Pending Review", desc: "Guard closed field response, supervisor reviewing" },
+  { status: "Resolved", desc: "Supervisor confirmed resolution" },
+  { status: "Closed", desc: "Final closure with full documentation" },
+];
+---
+
+<Layout
+  title="Incident Management — From Alert to Resolution | SYAG"
+  description="Manage the full incident lifecycle. Create, assign, escalate, and resolve incidents from any source — guards, cameras, IoT devices, or flow automation. Full audit trail."
+>
+  <PageHero
+    label="Incident Management"
+    headline="From alert to <span style='color:#ff8a3c'>resolution</span>. Nothing falls through the cracks."
+    subheadline="SYAG Incident Management is the operational backbone of your facility security. Every incident — from a motion detection alarm to a medical emergency — follows a structured lifecycle with full evidence capture, escalation rules, and audit trail."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Incidents come from everywhere. They all end up in <span style="color:#35E0FF">one place</span>.</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">An incident in SYAG can be created by:</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>A <strong class="text-white/80">guard</strong> filing a report from the mobile app</li>
+        <li>A <strong class="text-white/80">camera event</strong> triggering a Flow rule</li>
+        <li>An <strong class="text-white/80">IoT device</strong> event (panic button, sensor alarm)</li>
+        <li>A <strong class="text-white/80">visitor</strong> overstaying or a blacklisted individual arriving</li>
+        <li>A <strong class="text-white/80">supervisor</strong> opening an incident manually from the web dashboard</li>
+        <li>A <strong class="text-white/80">Flow automation</strong> rule detecting a condition</li>
+      </ul>
+      <p class="text-sm text-white/60">Regardless of origin, every incident enters the same structured pipeline.</p>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">A clear <span style="color:#ff8a3c">lifecycle</span>. Every time.</h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Status</th>
+            <th class="px-4 py-3">What it means</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {lifecycle.map((l) => (
+            <tr>
+              <td class="px-4 py-3 text-white font-medium">{l.status}</td>
+              <td class="px-4 py-3">{l.desc}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm text-white/60">SLA timers run at each stage. Incidents that breach their SLA are automatically escalated or flagged.</p>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white"><span style="color:#4ade80">Rich evidence</span>. From the field.</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">Guards attach evidence directly from the mobile app at the time of response:</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li><strong class="text-white/80">Photos</strong> — taken in-app with automatic timestamp and GPS metadata</li>
+        <li><strong class="text-white/80">Audio recordings</strong> — voice notes attached to the incident</li>
+        <li><strong class="text-white/80">Video clips</strong> — short video from the scene</li>
+        <li><strong class="text-white/80">GPS coordinates</strong> — exact location of the incident on facility map</li>
+        <li><strong class="text-white/80">Linked camera footage</strong> — clip from the camera that triggered the incident</li>
+        <li><strong class="text-white/80">Guard notes</strong> — structured text description of what was found</li>
+      </ul>
+      <p class="text-sm text-white/60">All evidence is stored with a tamper-evident chain of custody.</p>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Automatic escalation. No incident goes <span style="color:#ef4444">unresolved</span>.</h2>
+    <div class="glass-card space-y-3">
+      <p class="text-sm text-white/60">Configure escalation rules per incident type and priority:</p>
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>If an incident is unassigned for more than {"{X}"} minutes → notify supervisor</li>
+        <li>If an incident is unresolved after {"{Y}"} minutes → escalate to admin</li>
+        <li>If a critical incident has no response after {"{Z}"} minutes → escalate and page all available supervisors</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Turn your incidents into <span style="color:#35E0FF">insights</span></h2>
+    <div class="glass-card space-y-3">
+      <ul class="space-y-2 text-sm text-white/60">
+        <li>Incident volume by type, time period, and severity</li>
+        <li>Average response time and resolution time</li>
+        <li>Incidents by location (heat map on facility map)</li>
+        <li>Repeat incident hotspots — flag areas with recurring issues</li>
+        <li>Guard response performance — who responds fastest, who resolves thoroughly</li>
+        <li>Monthly incident trend — are incidents increasing or decreasing?</li>
+      </ul>
+      <p class="text-sm text-white/60">Export any report as PDF or CSV for insurance, compliance, or management reporting.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See <span style='color:#35E0FF'>incident management</span> in your facility."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

@@ -8,7 +8,9 @@
       "Edit(/.claude/skills/seo/**)",
       "Edit(/.claude/skills/demo-form/**)",
       "Bash(npm run:*)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "WebFetch(domain:www.syag.io)",
+      "Bash(xargs sed:*)"
     ],
     "additionalDirectories": [
       "d:\\Projects\\SYAG\\src\\website\\.claude\\skills"

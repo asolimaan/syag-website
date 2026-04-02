@@ -1,0 +1,161 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const triggers = [
+  { category: "Camera events", examples: "Motion detected, intrusion zone breach, ANPR match, camera offline" },
+  { category: "IoT device events", examples: "Panic button pressed, UPS failure, sensor alarm, gate open" },
+  { category: "Guard status events", examples: "Guard misses checkpoint, guard goes offline, shift starts/ends" },
+  { category: "Visitor events", examples: "Overstay detected, blacklisted individual scanned, contractor pass expires" },
+  { category: "Incident events", examples: "Incident opened, incident unresolved after X minutes, incident escalated" },
+  { category: "Scheduled time", examples: "Every day at 06:00, weekdays at 22:00, first day of month" },
+];
+
+const actions = [
+  { category: "Create incident", examples: "Open a new incident with priority, type, and description" },
+  { category: "Notify", examples: "Push notification, SMS, email to specified roles or individuals" },
+  { category: "Dispatch guard", examples: "Assign the nearest available guard to a location" },
+  { category: "Assign task", examples: "Create a task for a specific guard or supervisor" },
+  { category: "Escalate", examples: "Promote an incident to higher priority if unresolved" },
+  { category: "Log event", examples: "Write a structured entry to the activity log" },
+];
+
+const templates = [
+  "After-hours motion detection response",
+  "Visitor overstay escalation",
+  "Guard missed checkpoint alert",
+  "Panic button emergency response",
+  "Camera offline maintenance alert",
+  "Contractor access expiry notification",
+];
+---
+
+<Layout
+  title="Flow Automation — Visual Security Logic Builder | SYAG"
+  description="Build your facility's security automation visually. Connect camera events, IoT signals, visitor actions, and guard status to automated responses. No developer required."
+>
+  <PageHero
+    label="Flow Automation"
+    headline="Build your security logic. <span style='color:#35E0FF'>No developer required</span>."
+    subheadline="Flow is SYAG's visual automation engine. Connect any event from any module — cameras, IoT, guards, visitors — to any action. Create automated responses that keep your facility safe without manual intervention."
+    cta={{ label: "See a live demo →", href: "/demo" }}
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">When something happens, Flow makes sure the <span style="color:#4ade80">right thing</span> happens next</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">Flow automation rules follow a simple three-part structure:</p>
+      <div class="space-y-2 border border-white/10 rounded-xl p-4 text-sm font-mono">
+        <p class="text-white/80">WHEN <span class="text-white/50">[trigger event occurs]</span></p>
+        <p class="text-white/80">IF <span class="text-white/50">[condition is true]</span></p>
+        <p class="text-white/80">THEN <span class="text-white/50">[action is executed]</span></p>
+      </div>
+      <p class="text-sm text-white/60">
+        You build these rules visually on a canvas — drag, connect, configure. No code. No IT department required.
+      </p>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Security logic you can <span style="color:#35E0FF">see</span> and understand</h2>
+    <div class="glass-card space-y-4">
+      <p class="text-sm text-white/60">The Flow canvas is built on a visual node editor. Example rule:</p>
+      <div class="space-y-1 border border-white/10 rounded-xl p-4 text-sm text-white/70 font-mono">
+        <p>[Camera: Zone B motion detected]</p>
+        <p class="pl-4">↓</p>
+        <p>[Condition: Time is between 22:00 and 06:00]</p>
+        <p class="pl-4">↓</p>
+        <p>[Action: Create incident — Priority HIGH]</p>
+        <p class="pl-4">↓</p>
+        <p>[Action: Notify on-duty supervisor — Push + SMS]</p>
+        <p class="pl-4">↓</p>
+        <p>[Action: Dispatch nearest guard to Zone B]</p>
+      </div>
+      <p class="text-sm text-white/60">This rule runs automatically, 24/7, without any manual monitoring.</p>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">What can trigger a Flow rule</h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Trigger category</th>
+            <th class="px-4 py-3">Examples</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {triggers.map((t) => (
+            <tr>
+              <td class="px-4 py-3 text-white/80">{t.category}</td>
+              <td class="px-4 py-3">{t.examples}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">What Flow can do <span style="color:#4ade80">automatically</span></h2>
+    <div class="overflow-hidden rounded-2xl border border-white/10">
+      <table class="w-full text-left text-sm text-white/70">
+        <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-white/50">
+          <tr>
+            <th class="px-4 py-3">Action category</th>
+            <th class="px-4 py-3">Examples</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          {actions.map((a) => (
+            <tr>
+              <td class="px-4 py-3 text-white/80">{a.category}</td>
+              <td class="px-4 py-3">{a.examples}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Start with a <span style="color:#ff8a3c">template</span>. Customise from there.</h2>
+    <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+      {templates.map((t) => (
+        <div class="glass-card">
+          <p class="text-sm text-white/70">{t}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">What the alternatives look like</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="glass-card space-y-2">
+        <h3 class="text-base font-semibold text-white/60">Without Flow</h3>
+        <p class="text-sm text-white/60">
+          Every camera event, IoT alarm, and visitor overstay requires a human to notice it, decide
+          what to do, and manually communicate the response. At 3am, with one supervisor on duty,
+          things fall through the cracks.
+        </p>
+      </div>
+      <div class="glass-card space-y-2">
+        <h3 class="text-base font-semibold text-white">With Flow</h3>
+        <p class="text-sm text-white/60">
+          The platform acts as a second layer of supervision. Rules run continuously. The right people
+          are notified the moment something happens. Guards are dispatched automatically. Nothing waits
+          for someone to notice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See what your facility looks like when security is <span style='color:#4ade80'>automated</span>."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>
