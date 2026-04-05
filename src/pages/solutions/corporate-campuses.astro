@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "Multi-Building Guard Coordination",
+    desc: "Corporate campuses span office towers, parking structures, and outdoor zones — often with dozens of guards across simultaneous shifts. SYAG gives security managers a unified view of guard positions, checkpoint completion, and active incidents across the entire estate in real time.",
+  },
+  {
+    title: "Visitor and Contractor Access",
+    desc: "From executive guests to maintenance contractors, every visitor to a corporate campus needs structured access. SYAG's QR-based pre-registration lets hosts issue time-limited passes before arrival, reducing lobby delays and giving security a verified record of who is on site.",
+  },
+  {
+    title: "Cross-Shift Incident Continuity",
+    desc: "Incidents that start on one shift often carry over to the next. SYAG's incident management module keeps full event history, guard notes, and evidence attachments in a centralised record — so the incoming shift has complete context without a verbal handover.",
+  },
+  {
+    title: "Emergency Broadcast and Escalation",
+    desc: "When a threat or emergency occurs across a campus, speed of communication is critical. SYAG's escalation workflows automatically notify the right responders, log every action taken, and produce a timestamped audit trail — useful for post-incident review and duty-of-care obligations.",
+  },
+];
+---
+
+<Layout
+  title="Security Operations for Corporate Campuses | SYAG"
+  description="SYAG gives corporate campus security teams real-time guard coordination, structured visitor access, and audit-ready incident records across all buildings and shifts."
+>
+  <PageHero
+    label="Corporate Campuses"
+    headline="Security operations built for <span style='color:#2F7BFF'>campus scale</span>."
+    subheadline="Corporate campuses are complex environments — multiple buildings, rotating guard shifts, high visitor volumes, and strict duty-of-care requirements. SYAG brings all of it under a single operational view."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG for your corporate campus."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

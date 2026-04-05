@@ -5,55 +5,37 @@ import CtaBand from "../../components/CtaBand.astro";
 
 const categories = [
   {
-    label: "Security Operations",
-    desc: "Detect, respond, and resolve incidents from a single operational view.",
-    products: [
-      { title: "Incident Management", desc: "From the first alert to final resolution, every incident is tracked, assigned, and closed — nothing falls through the cracks.", href: "/products/incidents" },
-      { title: "Smart Alerts", desc: "Automated notifications triggered by cameras, sensors, or overdue patrols. The right person is warned at the right time.", href: "/products/flow" },
-      { title: "Operations Center", desc: "A live dashboard that shows everything happening across your facility right now — guards, incidents, visitors, and sensors.", href: "/products/incidents" },
-    ],
-  },
-  {
-    label: "Workforce & Patrols",
-    desc: "Know where every guard is, verify they did their job, and manage shifts without spreadsheets.",
+    label: "Guard Operations",
+    desc: "Manage your security workforce — from daily shifts to every logged action.",
     products: [
       { title: "Guard Management", desc: "Schedule shifts, track GPS locations, manage attendance, and oversee your entire security team from one screen.", href: "/products/guard-management" },
-      { title: "Patrol & Checkpoints", desc: "Verify guard presence at every checkpoint with QR scans and proof of visit. No patrol goes unconfirmed.", href: "/products/patrol" },
-      { title: "Guard Register", desc: "A digital log of every guard action — clock-ins, patrol completions, incident responses — all timestamped and tamper-proof.", href: "/products/guard-management" },
+      { title: "Guard Log Book", desc: "Every shift, checkpoint, and guard action — logged automatically, timestamped, and tamper-proof. Always audit-ready.", href: "/products/guard-management" },
+      { title: "Team Communication", desc: "Coordinate guards and supervisors without leaving the platform. No more WhatsApp threads for security-critical messages.", href: "/products/guard-management" },
     ],
   },
   {
-    label: "Visitor & Access Control",
-    desc: "Know who is on your premises at all times — from arrival to departure.",
+    label: "Monitoring & Devices",
+    desc: "Connect your cameras and sensors to a live operational picture that acts — not just watches.",
+    products: [
+      { title: "Camera & VMS", desc: "Your cameras don't just record — they trigger alerts, create incidents, and feed your operations center in real time.", href: "/products/cameras" },
+      { title: "IoT Devices", desc: "Panic buttons, motion detectors, UPS monitors, and environmental sensors — all connected to your incident pipeline.", href: "/products/iot" },
+      { title: "Operations Center", desc: "A live dashboard showing every guard, active incident, camera event, and visitor across your facility — right now.", href: "/products/incidents" },
+    ],
+  },
+  {
+    label: "Access & Assets",
+    desc: "Know who is on your premises and what you own — tracked from arrival to departure.",
     products: [
       { title: "Visitor Management", desc: "Issue QR passes, track check-ins and check-outs, flag overstays, and blacklist unwanted visitors — all automated.", href: "/products/visitors" },
-      { title: "Access Records", desc: "A complete history of who entered, when, and through which gate. Searchable and exportable for any audit.", href: "/products/visitors" },
+      { title: "Asset Management", desc: "Track every piece of security equipment from purchase to retirement. Know what's working, what's due for maintenance, and what's missing.", href: "/products/assets" },
     ],
   },
   {
-    label: "Smart Monitoring",
-    desc: "Connect your cameras and sensors to a security picture that acts — not just watches.",
+    label: "Response & Automation",
+    desc: "Detect, respond, and automate — so your team acts faster with less manual effort.",
     products: [
-      { title: "Camera & Video", desc: "Your cameras don't just record — they trigger alerts, create incidents, and feed your operations center in real time.", href: "/products/cameras" },
-      { title: "Smart Sensors", desc: "Panic buttons, motion detectors, UPS monitors, and environmental sensors — all connected to your incident pipeline.", href: "/products/iot" },
-      { title: "Equipment & Assets", desc: "Track every piece of security equipment from purchase to retirement. Know what's working, what's due for maintenance, and what's missing.", href: "/products/assets" },
-    ],
-  },
-  {
-    label: "Reports & Records",
-    desc: "Prove what happened, when, and who responded. Every event is documented.",
-    products: [
-      { title: "Audit & Compliance", desc: "Track every action across your system with a secure, tamper-proof history. Built for the compliance standards MEA facilities require.", href: "/products/guard-management" },
-      { title: "Operational Reports", desc: "Shift summaries, patrol completion rates, incident response times — generated automatically, ready when you need them.", href: "/products/incidents" },
-    ],
-  },
-  {
-    label: "Administration & Setup",
-    desc: "Configure your facility, assign roles, and automate workflows without calling IT.",
-    products: [
+      { title: "Incident Management", desc: "From the first alert to final resolution, every incident is tracked, assigned, and closed — nothing falls through the cracks.", href: "/products/incidents" },
       { title: "Flow Automation", desc: "Build your security logic visually — no developer required. When X happens, automatically do Y. Set it once, it runs forever.", href: "/products/flow" },
-      { title: "Site Configuration", desc: "Define your sites, gates, checkpoints, and zones. Assign guards and supervisors. Set schedules and rules.", href: "/products/guard-management" },
-      { title: "Roles & Permissions", desc: "Control who sees what — facility admins, supervisors, and guards each get their own view with the right level of access.", href: "/products/guard-management" },
     ],
   },
 ];
@@ -65,7 +47,7 @@ const categories = [
 >
   <PageHero
     headline="One platform. <span style='color:#4ade80'>Complete</span> operational control."
-    subheadline="SYAG replaces your scattered tools with six integrated product categories — guard management, incident response, visitor control, smart monitoring, compliance reporting, and workflow automation. Every product works standalone. Every product works better together."
+    subheadline="SYAG replaces your scattered tools with ten integrated pillars — guard management, guard log book, team communication, cameras, IoT devices, operations center, visitor management, asset management, incident management, and flow automation. Every product works standalone. Every product works better together."
     cta={{ label: "Request a demo →", href: "/demo" }}
   />
 
@@ -96,7 +78,7 @@ const categories = [
       One platform. Full <span style="color:#35E0FF">visibility</span>. <span style="color:#4ade80">Faster</span> response.
     </h2>
     <p class="mx-auto max-w-lg text-sm text-white/60">
-      Every product in SYAG connects to the same operational picture. Incidents link to guards. Guards link to patrols. Visitors link to gates. Sensors link to alerts. You don't manage six tools — you manage one facility.
+      Every product in SYAG connects to the same operational picture. Incidents link to guards. Guards link to patrols. Visitors link to gates. Sensors link to alerts. You don't manage ten tools — you manage one facility.
     </p>
     <div class="flex flex-wrap items-center justify-center gap-3">
       <a href="/demo" class="rounded-full bg-white px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-black">

@@ -10,7 +10,10 @@
       "Bash(npm run:*)",
       "Read(//tmp/**)",
       "WebFetch(domain:www.syag.io)",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(ls -1 /d/Projects/SYAG/src/website/src/pages/solutions/*.astro)",
+      "Bash(ls -1 /d/Projects/SYAG/src/website/src/pages/products/*.astro)",
+      "Bash(ls -1 /d/Projects/SYAG/src/website/src/pages/why-syag/*.astro)"
     ],
     "additionalDirectories": [
       "d:\\Projects\\SYAG\\src\\website\\.claude\\skills"

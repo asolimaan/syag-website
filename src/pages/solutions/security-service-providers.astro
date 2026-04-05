@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "Multi-Account Client Management",
+    desc: "Security companies manage operations across dozens of client sites simultaneously. SYAG gives operations managers a consolidated view across all accounts — incidents, guard coverage, and exceptions — without switching between client portals.",
+  },
+  {
+    title: "Guard Performance and Accountability",
+    desc: "Client contracts are won and lost on guard reliability. SYAG tracks patrol completion rates, response times, and checkpoint adherence per guard — giving supervisors the data to coach underperformers and giving clients visibility into service delivery.",
+  },
+  {
+    title: "Standardised Reporting Per Client",
+    desc: "Every client expects a different format, frequency, and level of detail in their security reports. SYAG generates structured incident reports and shift summaries that can be exported as PDF — consistent, professional, and delivered without manual effort.",
+  },
+  {
+    title: "SLA-Grade Incident Audit Trails",
+    desc: "When clients dispute a response time or request evidence of an incident, the record has to be airtight. SYAG logs every guard action with GPS coordinates, timestamps, and attached photos — providing an unbroken chain of evidence that meets contractual and legal standards.",
+  },
+];
+---
+
+<Layout
+  title="Security Operations Platform for Service Providers | SYAG"
+  description="SYAG helps security service providers manage multi-account operations with transparent execution, consistent reporting, and audit-ready incident records across all client sites."
+>
+  <PageHero
+    label="Security Service Providers"
+    headline="Run every account with <span style='color:#ff8a3c'>one platform</span>."
+    subheadline="Security companies are judged on execution — patrol coverage, response speed, and the quality of their incident records. SYAG gives your operations team the visibility and tools to deliver, across every client site."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See how SYAG scales across your client portfolio."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>

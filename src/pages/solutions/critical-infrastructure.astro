@@ -1,0 +1,53 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PageHero from "../../components/PageHero.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+const useCases = [
+  {
+    title: "24/7 Perimeter Monitoring",
+    desc: "Critical infrastructure operates around the clock with zero tolerance for coverage gaps. SYAG tracks guard positions and patrol routes in real time, alerts supervisors when checkpoints are missed, and maintains a continuous log of perimeter activity across every shift.",
+  },
+  {
+    title: "IoT Sensor and Alarm Integration",
+    desc: "Power plants, water facilities, and logistics hubs rely on dense sensor networks — perimeter alarms, motion detectors, UPS monitors, and environmental sensors. SYAG normalises these signals into a single incident pipeline and can automate guard dispatch via Flow rules.",
+  },
+  {
+    title: "Compliance-Grade Incident Records",
+    desc: "Incidents at critical infrastructure sites are subject to regulatory scrutiny. SYAG's incident reports include full evidence chains — GPS-stamped timestamps, guard verification, photo attachments, and supervisor sign-off — all exportable as PDF for regulatory submission.",
+  },
+  {
+    title: "Access Control Across Restricted Zones",
+    desc: "Critical sites have layered access requirements: different zones, clearance levels, and contractor populations. SYAG's visitor management issues time-limited, zone-specific access passes with automatic expiry — ensuring only authorised personnel enter sensitive areas.",
+  },
+];
+---
+
+<Layout
+  title="Security Operations for Critical Infrastructure | SYAG"
+  description="SYAG provides 24/7 perimeter monitoring, IoT event management, and compliance-grade incident records for critical infrastructure operators who cannot afford gaps in security coverage."
+>
+  <PageHero
+    label="Critical Infrastructure"
+    headline="Real-time control for <span style='color:#35E0FF'>zero-tolerance</span> environments."
+    subheadline="Critical infrastructure demands continuous coverage, rigorous access control, and audit-ready records. SYAG is built for the operational reality of sites where a missed alert or documentation gap has serious consequences."
+  />
+
+  <section class="space-y-6">
+    <h2 class="quartr-heading text-3xl font-semibold text-white">Key use cases</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      {useCases.map((uc) => (
+        <div class="glass-card space-y-3">
+          <h3 class="text-base font-semibold text-white">{uc.title}</h3>
+          <p class="text-sm text-white/60">{uc.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="See SYAG for your critical infrastructure site."
+    primaryLabel="Request a demo →"
+    primaryHref="/demo"
+  />
+</Layout>
